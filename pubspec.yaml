@@ -82,6 +82,9 @@ flutter:
 
 
     - Assets/Icons/avat.svg
+    - Assets/Icons/heart.svg
+    - Assets/Icons/location.svg
+    - Assets/Icons/medal.svg
     - Assets/Icons/challenge.svg
     - Assets/Icons/circ.svg
     - Assets/Icons/dumb.svg
@@ -89,6 +92,7 @@ flutter:
     - Assets/Icons/Play.svg
     - Assets/Icons/slope.svg
     - Assets/Icons/star.svg
+    - Assets/Icons/Dot.svg
     - Assets/Icons/trophy.svg
     
 
