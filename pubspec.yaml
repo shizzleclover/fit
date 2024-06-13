@@ -79,10 +79,17 @@ flutter:
     - Assets/Images/Path6.png
     - Assets/Images/Path7.png
     - Assets/Images/image.png
+    - Assets/Images/ocean.svg
 
 
 
     - Assets/Icons/avat.svg
+    - Assets/Icons/hoe.svg
+    - Assets/Icons/le.svg
+    - Assets/Icons/chat.svg
+    - Assets/Icons/Filter.svg
+    - Assets/Icons/chat.svg
+    - Assets/Icons/date.svg
     - Assets/Icons/shin.svg
     - Assets/Icons/shoe.svg
     - Assets/Icons/heartt.svg

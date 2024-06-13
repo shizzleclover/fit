@@ -33,16 +33,21 @@ class _ScrollPageState extends State<ScrollPage> {
       backgroundColor: body,
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 130.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 90.0),
           child: Column(
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CircleAvatar(
-                    radius: 30,
-                    backgroundImage: AssetImage('Assets/Images/image.png'),
+                 Container(
+                  height: 64,
+                  width: 64,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                    border: Border.all(color: Colors.black)
                   ),
+                  child: Image.asset('Assets/Images/image.png'),
+                 ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -56,19 +61,44 @@ class _ScrollPageState extends State<ScrollPage> {
                       ),
                     ],
                   ),
-                  ButtonIcon(
-                    backgroundColor: Colors.white,
-                    svgPath: 'Assets/Icons/Cakendar.svg',
-                    width: 64,
-                    height: 64,
-                    radius: 100,
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => CalenderPage()),
-                      );
-                    },
-                  ),
+                 GestureDetector(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => CalenderPage()),
+    );
+  },
+  child: Container(
+    height: 64,
+    width: 64,
+    decoration: BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(100),
+      border: Border.all(color: Colors.black),
+    ),
+    child: Center(
+      child: SvgPicture.asset(
+        'Assets/Icons/Calendar.svg',
+        height: 30,
+        width: 30,
+      ),
+    ),
+  ),
+),
+
+                  // ButtonIcon(
+                  //   backgroundColor: Colors.white,
+                  //   svgPath: 'Assets/Icons/Calendar.svg',
+                  //   width: 64,
+                  //   height: 64,
+                  //   radius: 100,
+                  //   onTap: () {
+                  //     Navigator.push(
+                  //       context,
+                  //       MaterialPageRoute(builder: (context) => CalenderPage()),
+                  //     );
+                  //   },
+                  // ),
                 ],
               ),
               SizedBox(height: 30),
@@ -306,7 +336,7 @@ class _ScrollPageState extends State<ScrollPage> {
         if (seeAll)
           GestureDetector(
             onTap: () {
-              // Add action for "See All" button
+              
             },
             child: Text('See All', style: TextStyle(fontFamily: 'CircularStd', fontWeight: FontWeight.w700, fontSize: 18)),
           ),

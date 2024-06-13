@@ -1,4 +1,6 @@
+import 'package:fitapp/Pages/homepage.dart';
 import 'package:fitapp/Pages/mappage.dart';
+import 'package:fitapp/Pages/message.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -24,69 +26,135 @@ class _FeedPageState extends State<FeedPage> {
 
     return Scaffold(
       backgroundColor: body,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 90.0),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 64,
+                    width: 64,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      border: Border.all(color: Colors.black),
+                    ),
+                    child: Image.asset('Assets/Images/image.png'),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Hello Linh!',
+                        style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 20),
+                      ),
+                      Text(
+                        'Thursday, 08 July',
+                        style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 20),
+                      ),
+                    ],
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MessagePage()),
+                      );
+                    },
+                    child: Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(100),
+                        border: Border.all(color: Colors.black),
+                      ),
+                      child: Center(
+                        child: SvgPicture.asset(
+                          'Assets/Icons/chat.svg',
+                          height: 30,
+                          width: 30,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 20),
+              TextField(
+                
+                decoration: InputDecoration(
+                  
+                  filled: true,
+                  fillColor: Colors.white,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(50.0),
+                    borderSide: BorderSide(color: bord),
+                  ),
+                  prefixIcon: SvgPicture.asset('Assets/Icon/search.svg'),
+                  suffixIcon: SvgPicture.asset('Assets/Icons/Filter.svg'),
+                  hintText: 'Search friends or neighbors',
+                  contentPadding: EdgeInsets.symmetric(vertical: 20.0),
+                ),
+              ),
+               SizedBox(height: 20,),
+                  Row(
+                    children: [
+                      Container(
+                        height: 64,
+                        width: 64,
+                        decoration: BoxDecoration(
+                          color: conta,
+                          borderRadius: BorderRadius.circular(100)
+                        ),
+                        child: SvgPicture.asset('Assets/Icons/'),
+                      ),
+                      SizedBox( width: 30,),
+                      Container(
+                        height: 64,
+                        width: 64,
+                        decoration: BoxDecoration(
+                           
+                          border: Border.all(color: conta),
+                          borderRadius: BorderRadius.circular(100)
+                        ),
+                        child: SvgPicture.asset('Assets/Images/'),
+                      ),
+                    ],
+                  ),
+            ],
+          ),
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         color: body,
         shape: CircularNotchedRectangle(),
         elevation: 20,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                children: [
-                  IconButton(
-                    onPressed: () {
-                      // Replace the FeedPage() with the page you want to navigate to
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => PageToNavigate()),
-                      // );
-                    },
-                    icon: SvgPicture.asset('Assets/Icons/heart.svg'),
-                  ),
-                  SizedBox(width: 23),
-                  IconButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MapPage()),
-                      );
-                    },
-                    icon: SvgPicture.asset('Assets/Icons/location.svg'),
-                  ),
-                ],
-              ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
+              },
+              icon: SvgPicture.asset('Assets/Icons/hoe.svg'),
             ),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 8.0),
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 20,
-                      backgroundImage: AssetImage('Assets/Images/image.png'),
-                    ),
-                    SizedBox(width: 8),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'First line of text',
-                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          'Second line of text',
-                          style: TextStyle(fontSize: 14, color: txt),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MapPage()),
+                );
+              },
+              icon: SvgPicture.asset('Assets/Icons/l.svg'),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 10),
+              padding: const EdgeInsets.only(bottom: 10),
               child: IconButton(
                 onPressed: () {},
                 icon: SvgPicture.asset(
@@ -96,15 +164,14 @@ class _FeedPageState extends State<FeedPage> {
                 ),
               ),
             ),
-            SizedBox(width: 27),
             Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 SizedBox(height: 20),
                 Text('Social', style: TextStyle(color: Colors.black)),
                 SvgPicture.asset('Assets/Icons/Dot.svg'),
               ],
             ),
-            SizedBox(width: 20),
             IconButton(
               onPressed: () {},
               icon: SvgPicture.asset('Assets/Icons/medal.svg'),

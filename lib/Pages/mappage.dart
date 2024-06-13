@@ -1,133 +1,84 @@
+import 'package:fitapp/Pages/feed.dart';
+import 'package:fitapp/Pages/homepage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+
 
 class MapPage extends StatelessWidget {
   const MapPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    Color txt = Color.fromRGBO(127, 127, 127, 1);
+    Color bord = Color.fromRGBO(191, 191, 191, 1);
+    Color blm = Color.fromRGBO(4, 4, 21, 1);
+    Color bottom = Color.fromRGBO(255, 228, 232, 1);
+    Color body = Color.fromRGBO(255, 255, 255, 1);
+    Color con = Color.fromRGBO(255, 96, 121, 1);
+    Color conta = Color.fromRGBO(255, 96, 121, 1);
 
-      //  body: Container(
-      //   width: MediaQuery.of(context).size.width,
-      //   height: MediaQuery.of(context).size.height,
-      //   child: Image.asset(
-      //     'Assets/Images/Map.png',
-      //     width: MediaQuery.of(context).size.width,
-      //     height: MediaQuery.of(context).size.height,
-      //     fit: BoxFit.cover,
-      //   ),
-      // ),
-      // bottomNavigationBar: CustomBottomAppBar(myColor2: myColor2),
+    return Scaffold(
+         bottomNavigationBar: BottomAppBar(
+        color: body,
+        shape: CircularNotchedRectangle(),
+        elevation: 20,
+        child: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                children: [
+                 IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                      );
+                    },
+                    icon: SvgPicture.asset('Assets/Icons/hoe.svg'),
+                  ),
+                  SizedBox(width: 23),
+                 Column(
+              children: [
+                SizedBox(height: 20),
+                Text('Map', style: TextStyle(color: Colors.black)),
+                SvgPicture.asset('Assets/Icons/Dot.svg'),
+              ],
+            ),
+                ],
+              ),
+            ),
+            SizedBox(width: 1),
+            Padding(
+              padding: EdgeInsets.only(bottom: 10),
+              child: IconButton(
+                onPressed: () {},
+                icon: SvgPicture.asset(
+                  'Assets/Icons/Play.svg',
+                  width: 40,
+                  height: 40,
+                ),
+              ),
+            ),
+            SizedBox(width: 27),
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FeedPage()),
+                );
+              },
+              icon: SvgPicture.asset('Assets/Icons/heart.svg'),
+            ),
+            SizedBox(width: 20),
+            IconButton(
+              onPressed: () {},
+              icon: SvgPicture.asset('Assets/Icons/medal.svg'),
+            ),
+          ],
+        ),
+      ),
+
     );
   }
 }
-
-// class CustomBottomAppBar extends StatelessWidget {
-//   final Color myColor2;
-
-//   const CustomBottomAppBar({
-//     Key? key,
-//     required this.myColor2,
-//   }) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return ClipRRect(
-//       borderRadius: BorderRadius.only(
-//         topLeft: Radius.circular(20.0),
-//         topRight: Radius.circular(20.0),
-//       ),
-//       child: Container(
-//         color: myColor2,
-//         child: Column(
-//           mainAxisSize: MainAxisSize.min,
-//           children: [
-//             Container(
-//               height: 200.0, 
-//               color: myColor2,
-//               child: Column(
-//                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//                 children: [
-//                   Image.asset(
-//                     'Assets/Images/garbage.jpg',
-//                     height: 53.0,
-//                     width:  350.0, 
-//                     fit: BoxFit.cover,
-//                   ),
-//                   Image.asset(
-//                     'Assets/Images/garbage.jpg',
-//                     height: 53.0,
-//                     width: 350.0, 
-//                     fit: BoxFit.cover,
-//                   ),
-//                 ],
-//               ),
-//             ),
-//             Padding(
-//               padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
-//               child: Row(
-//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                 children: <Widget>[
-//                   IconButton(
-//                     icon: SvgPicture.asset(
-//                       'Assets/Icons/HomeIcon.svg',
-//                       width: 35,
-//                       height: 35,
-//                     ),
-//                     onPressed: () {
-//                       Navigator.push(
-//                         context,
-//                         MaterialPageRoute(builder: (context) => Homepage()),
-//                       );
-//                     },
-//                   ),
-//                   IconButton(
-//                     icon: SvgPicture.asset(
-//                       'Assets/Icons/StackIcon.svg',
-//                       width: 35,
-//                       height: 35,
-//                     ),
-//                     onPressed: () {
-//                       Navigator.push(
-//                       context,
-//                       MaterialPageRoute(builder: (context) => Landingpage()),
-//                     );
-//                     },
-//                   ),
-//                   IconButton(
-//                     icon: SvgPicture.asset(
-//                       'Assets/Icons/LeafIcon.svg',
-//                       width: 35,
-//                       height: 35,
-//                     ),
-//                     onPressed: () {
-//                       Navigator.push(
-//                       context,
-//                       MaterialPageRoute(builder: (context) => ForecastPage()),
-//                     );
-//                     },
-//                   ),
-//                   IconButton(
-//                     icon: SvgPicture.asset(
-//                       'Assets/Icons/LogoIcon.svg',
-//                       width: 35,
-//                       height: 35,
-//                     ),
-//                     onPressed: () {
-
-//                       Navigator.push(
-//                 context,
-//                 MaterialPageRoute(builder: (context) => ProfilePage()),
-//               );
-//                     },
-//                   ),
-//                 ],
-//               ),
-//             ),
-//           ],
-//         ),
-//       ),
-
-//     );
-//   }
-// }
