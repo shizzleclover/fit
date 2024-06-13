@@ -27,6 +27,8 @@ class _ScrollPageState extends State<ScrollPage> {
     Color con = Color.fromRGBO(255, 96, 121, 1);
     Color conta = Color.fromRGBO(255, 96, 121, 1);
 
+    double screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: body,
       body: SingleChildScrollView(
@@ -38,10 +40,11 @@ class _ScrollPageState extends State<ScrollPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CircleAvatar(
-            radius: 30,  
-            backgroundImage: AssetImage('Assets/Icons/avat.svg'),
-          ),
+                    radius: 30,
+                    backgroundImage: AssetImage('Assets/Images/image.png'),
+                  ),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         'Hello Linh!',
@@ -53,19 +56,19 @@ class _ScrollPageState extends State<ScrollPage> {
                       ),
                     ],
                   ),
-                  ButtonIcon(backgroundColor: Colors.black, 
-                          svgPath: 'Assets/Icons/challenge.svg',
-                           width: 64,
-                            height: 64,
-                             radius: 100, 
-                             onTap: () {
-                               Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => CalenderPage()),
-                    );
-           
-                             },
-                             ),
+                  ButtonIcon(
+                    backgroundColor: Colors.white,
+                    svgPath: 'Assets/Icons/Cakendar.svg',
+                    width: 64,
+                    height: 64,
+                    radius: 100,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CalenderPage()),
+                      );
+                    },
+                  ),
                 ],
               ),
               SizedBox(height: 30),
@@ -83,7 +86,6 @@ class _ScrollPageState extends State<ScrollPage> {
                 children: [
                   Column(
                     children: [
-                      
                       Text(
                         '7580 m',
                         style: TextStyle(fontFamily: 'CircularStd', color: blm),
@@ -97,7 +99,6 @@ class _ScrollPageState extends State<ScrollPage> {
                   SizedBox(width: 30),
                   Column(
                     children: [
-                      
                       Text(
                         '9832',
                         style: TextStyle(fontFamily: 'CircularStd', color: blm),
@@ -111,7 +112,6 @@ class _ScrollPageState extends State<ScrollPage> {
                   SizedBox(width: 30),
                   Column(
                     children: [
-                      
                       Text(
                         '1248',
                         style: TextStyle(fontFamily: 'CircularStd', color: blm),
@@ -125,456 +125,67 @@ class _ScrollPageState extends State<ScrollPage> {
                 ],
               ),
               SizedBox(height: 40),
-              Image.asset('Assets/Images/chart.png'),
-              SizedBox(height: 30, width: 1,),
+              Image.asset('Assets/Images/chart.png', width: screenWidth * 0.8),
+              SizedBox(height: 30),
               Row(
-                
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                   
-              Container(
-                width: 120, // Set the desired width
-                height: 120, // Set the desired height
-                decoration: BoxDecoration(
-                  color: conta,
-                  
-                  borderRadius: BorderRadius.circular(28),
-                ),
-                padding: EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start, // Align items to the left
-                  children: [
-                    SvgPicture.asset(
-                      'Assets/Icons/dumb.svg',
-                      // height: 50,
-                      // width: 50,
-                      // color: blm,
-                    ),
-                    SizedBox(height: 10 ,),
-                    SizedBox(width: 10,),
-                    Row(
-                    
-                      children: [
-                        
-                        Text(
-                          '628',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            color: blm,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'Kcal',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            color: blm,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Text(
-                      'Dumbbell',
-                      style: TextStyle(
-                        fontFamily: 'CircularStd',
-                        fontWeight: FontWeight.w400,
-                        color: body,
-                        fontSize: 14,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(width: 5,),
-              Container(
-                width: 120, // Set the desired width
-                height: 120, // Set the desired height
-                decoration: BoxDecoration(
-                  color: conta,
-                  
-                  borderRadius: BorderRadius.circular(28),
-                ),
-                padding: EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start, // Align items to the left
-                  children: [
-                    SvgPicture.asset(
-                      'Assets/Icons/dumb.svg',
-                      // height: 50,
-                      // width: 50,
-                      // color: blm,
-                    ),
-                    SizedBox(height: 10),
-                    Row(
-                      children: [
-                        Text(
-                          '628',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            color: blm,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'Kcal',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            color: blm,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Text(
-                      'Dumbbell',
-                      style: TextStyle(
-                        fontFamily: 'CircularStd',
-                        fontWeight: FontWeight.w400,
-                        color: body,
-                        fontSize: 14,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(width: 11,),
-              Container(
-                width: 120, // Set the desired width
-                height: 120, // Set the desired height
-                decoration: BoxDecoration(
-                  color: conta,
-                 
-                  borderRadius: BorderRadius.circular(28),
-                ),
-                padding: EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start, // Align items to the left
-                  children: [
-                    SvgPicture.asset(
-                      'Assets/Icons/dumb.svg',
-                      // height: 50,
-                      // width: 50,
-                      // color: blm,
-                    ),
-                    SizedBox(height: 10),
-                    Row(
-                      children: [
-                        Text(
-                          '628',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            color: blm,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'Kcal',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            color: blm,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Text(
-                      'Dumbbell',
-                      style: TextStyle(
-                        fontFamily: 'CircularStd',
-                        fontWeight: FontWeight.w400,
-                        color: body,
-                        fontSize: 14,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              ],
+                  _buildContainer(
+                    svgPath: 'Assets/Icons/dumb.svg',
+                    value: '628',
+                    unit: 'Kcal',
+                    label: 'Dumbbell',
+                    conta: conta,
+                    body: body,
+                  ),
+                  SizedBox(width: 16),
+                  _buildContainer(
+                    svgPath: 'Assets/Icons/dumb.svg',
+                    value: '628',
+                    unit: 'Kcal',
+                    label: 'Dumbbell',
+                    conta: conta,
+                    body: body,
+                  ),
+                  SizedBox(width: 16),
+                  _buildContainer(
+                    svgPath: 'Assets/Icons/dumb.svg',
+                    value: '628',
+                    unit: 'Kcal',
+                    label: 'Dumbbell',
+                    conta: conta,
+                    body: body,
+                  ),
+                ],
               ),
               SizedBox(height: 30),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text('My Plan', style: TextStyle(fontFamily: 'CircularStd', fontWeight: FontWeight.w700, fontSize: 20 ),),
-                      SizedBox(width: 297,),
-                      SvgPicture.asset('Assets/Icons/circ.svg')
-                    ],
-                  ),
-                  SizedBox(height: 10),  
-                  Text('July, 2021', style: TextStyle(),),
-                  
-                ],
-                
-                
-              ),
-              SizedBox(height: 30,),
-               Container(
-                height: 198, width: 327 ,
-                decoration: BoxDecoration(
-                   color: Color.fromRGBO(255, 228, 232, 1),
-                  borderRadius: BorderRadius.circular(20)
-                ), 
-
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                     ButtonIcon(backgroundColor: con, 
-                          svgPath: 'Assets/Icons/challenge.svg',
-                           width: 64,
-                            height: 64,
-                             radius: 100, 
-                             onTap: () {},
-                            ),   
-                            SizedBox(width: 30,),
-                            Column(
-                              children: [
-                    Text('WEEK 1'),
-                    SizedBox(height: 10,),
-                    Text('Body Weight'),
-                    Text('Workout 1 of 5'), 
-                              ],
-                            ),
-                 
-                          ],  
-                    ),    
-                    SizedBox(height: 40,),
-                    Container(
-                      height: 64, width: 279,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(15)
-                      ),
-                      
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                                SvgPicture.asset('Assets/Icons/medal.svg', width: 40, height: 40),
-                                SizedBox(width: 20,),
-                                Column(
-                              children: [
-                    SizedBox(height: 10,),
-                    Text('Next exercise'),
-                    Text('Lower Strength'), 
-                              ],
-                            ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                  
-                ), 
-                
-                
-               ),
-                SizedBox(height: 30,),
-                 Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text('Recent Plan', style: TextStyle(fontFamily: 'CircularStd', fontWeight: FontWeight.w700, fontSize: 20 ),),
-                      SizedBox(width: 200,),
-                      Text(
-                        'See All'
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 10),  
-                  Text('July, 2021', style: TextStyle(),),
-                  
-                ],
-                
-                
-              ),
-              SizedBox(height: 20,),
-              Row(
-                  children: [
-                    SizedBox(width: 15,),
-                    Column(
-                      
-                        children: [
-                          ButtonIcon(backgroundColor: con, 
-                          svgPath: 'Assets/Icons/star.svg',
-                           width: 64,
-                            height: 64,
-                             radius: 18, 
-                             onTap: () {},
-                             ),
-                             Text('Special')
-                        ],
-                    ),
-                    SizedBox(width: 30,),
-                      Column(
-                        children: [
-                          ButtonIcon(backgroundColor: con, 
-                          svgPath: 'Assets/Icons/slope.svg',
-                           width: 64,
-                            height: 64,
-                             radius: 18, 
-                             onTap: () {},
-                             ),
-                             Text('Beach Rea...')
-                        ],
-                    ),
-                       SizedBox(width: 20,),
-                      Column(
-                        children: [
-                          ButtonIcon(backgroundColor: con, 
-                          svgPath: 'Assets/Icons/trophy.svg',
-                           width: 64,
-                            height: 64,
-                             radius: 18, 
-                             onTap: () {},
-                             ),
-                             Text('Full - Body')
-                        ],
-                    ),
-                       SizedBox(width: 30,),
-                      Column(
-                        children: [
-                          ButtonIcon(backgroundColor: con, 
-                          svgPath: 'Assets/Icons/challenge.svg',
-                           width: 64,
-                            height: 64,
-                             radius: 18, 
-                             onTap: () {},
-                             ),
-                             Text('Challenge')
-                        ],
-                    ),
-                    
-                    
-                  ],
-              ),
-               SizedBox(height: 30,),
-                 Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text('Today\'s Information', style: TextStyle(fontFamily: 'CircularStd', fontWeight: FontWeight.w700, fontSize: 20 ),),
-                      SizedBox(width: 149,),
-                      SvgPicture.asset('Assets/Icons/circ.svg')
-                    ],
-                  ),
-                  SizedBox(height: 10),  
-                  Text('July, 2021', style: TextStyle(),),
-                  
-                ],   
-              ),
-            SizedBox(height: 30,),
-               Row(
-                children: [
-                  Column(
-                    children: [
-                      Container(
-                        width: 158, height: 118,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                        border: Border.all(color: bord, width:2),
-                        borderRadius: BorderRadius.circular(20),
-                         ),
-                          child: Row(
-                          children: [
-                          Text('Calories', style: TextStyle(),),
-                          SvgPicture.asset('Assets/Icons/circ.svg')
-                          ],
-                      ),
-                      ),
-                      SizedBox(height: 20,),
-                      GestureDetector(
-                        onTap: () {
-                               Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => SpeedPage()),
-                    );
-           
-                        },
-                        child: 
-                       Container(
-                        width: 158, height: 118,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                        border: Border.all(color: bord, width:2),
-                        borderRadius: BorderRadius.circular(20),
-                         ),
-                       child: Row(
-                          children: [
-                          Text('Steps', style: TextStyle(),),
-                          SvgPicture.asset('Assets/Icons/circ.svg')
-                          ],
-                      ),
-                      ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 40,),
-                  Container(
-                        width: 158, height: 252,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                        border: Border.all(color: bord, width:2),
-                        borderRadius: BorderRadius.circular(20),
-                         ),            
-                      ),
-                ],               
-               ),
-                 SizedBox(height: 50,),
-                  Container(
-                        width: 367, height: 108,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                        border: Border.all(color: bord, width:2),
-                        borderRadius: BorderRadius.circular(20),
-                         ),       
-                         child: Row(
-                          children: [
-                             ButtonIcon(backgroundColor: con, 
-                          svgPath: 'Assets/Icons/trophy.svg',
-                           width: 64,
-                            height: 64,
-                             radius: 18, 
-                             onTap: () {},
-                             ),
-                             SizedBox(width: 20,),
-                             Column(
-                              children: [
-                                Text('Invite your friends', style: TextStyle(),),
-
-                                SizedBox(height: 10,),
-                                Text('Invite your friends to get a \n free exercise right away', style: TextStyle(),)
-                              ],
-                             )
-                          ],
-                         ),     
-                      ),
-               
-                ],  
-          ),  
-          
-           
+              _buildSectionTitle('My Plan', 'Assets/Icons/circ.svg', screenWidth),
+              SizedBox(height: 10),
+              Text('July, 2021', style: TextStyle()),
+              SizedBox(height: 30),
+              _buildPlanContainer(con, txt, blm, body),
+              SizedBox(height: 30),
+              _buildSectionTitle('Recent Plan', null, screenWidth, seeAll: true),
+              SizedBox(height: 10),
+              Text('July, 2021', style: TextStyle(fontFamily: 'CircularStd', fontWeight: FontWeight.w400, fontSize: 14, color: txt)),
+              SizedBox(height: 40),
+              _buildIconRow(con),
+              SizedBox(height: 30),
+              _buildSectionTitle('Today\'s Information', 'Assets/Icons/circ.svg', screenWidth),
+              SizedBox(height: 10),
+              Text('July, 2021', style: TextStyle()),
+              SizedBox(height: 30),
+              _buildInfoRow(bord, body),
+              SizedBox(height: 50),
+              _buildInviteContainer(con, bord),
+            ],
+          ),
         ),
-        
       ),
       bottomNavigationBar: BottomAppBar(
         color: body,
         shape: CircularNotchedRectangle(),
-        elevation: 20, // Set elevation for the bottom app bar
+        elevation: 20,
         child: Row(
           children: [
             Padding(
@@ -584,46 +195,367 @@ class _ScrollPageState extends State<ScrollPage> {
                   Text('Home', style: TextStyle(color: Colors.black)),
                   SizedBox(width: 23),
                   IconButton(
-              onPressed: () {
-                     Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => MapPage()),
-                    );
-              },
-              icon: SvgPicture.asset('Assets/Icons/location.svg' ),
-              
-            ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MapPage()),
+                      );
+                    },
+                    icon: SvgPicture.asset('Assets/Icons/location.svg'),
+                  ),
                 ],
               ),
             ),
             SizedBox(width: 1),
             Padding(
-              padding: EdgeInsets.only(bottom: 10), // Add vertical padding for center icon
+              padding: EdgeInsets.only(bottom: 10),
               child: IconButton(
                 onPressed: () {},
-                icon: SvgPicture.asset('Assets/Icons/Play.svg'
-                , width: 40,
-                height: 40,
-                ), // Replace 'YOUR_SVG_FILE_PATH' with the path to your SVG file
+                icon: SvgPicture.asset(
+                  'Assets/Icons/Play.svg',
+                  width: 40,
+                  height: 40,
+                ),
               ),
             ),
             SizedBox(width: 27),
             IconButton(
               onPressed: () {
-                     Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => FeedPage()),
-                    );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FeedPage()),
+                );
               },
               icon: SvgPicture.asset('Assets/Icons/heart.svg'),
             ),
             SizedBox(width: 20),
             IconButton(
               onPressed: () {},
-              icon: SvgPicture.asset('Assets/Icons/medal.svg',),
+              icon: SvgPicture.asset('Assets/Icons/medal.svg'),
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildContainer({
+    required String svgPath,
+    required String value,
+    required String unit,
+    required String label,
+    required Color conta,
+    required Color body,
+  }) {
+    return Container(
+      width: 120,
+      height: 120,
+      decoration: BoxDecoration(
+        color: conta,
+        borderRadius: BorderRadius.circular(28),
+      ),
+      padding: EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SvgPicture.asset(svgPath),
+          SizedBox(height: 10),
+          Row(
+            children: [
+              Text(
+                value,
+                style: TextStyle(
+                  fontFamily: 'CircularStd',
+                  color: body,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(width: 10),
+              Text(
+                unit,
+                style: TextStyle(
+                  fontFamily: 'CircularStd',
+                  color: body,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          Text(
+            label,
+            style: TextStyle(
+              fontFamily: 'CircularStd',
+              fontWeight: FontWeight.w400,
+              color: body,
+              fontSize: 14,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSectionTitle(String title, String? iconPath, double screenWidth, {bool seeAll = false}) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(title, style: TextStyle(fontFamily: 'CircularStd', fontWeight: FontWeight.w700, fontSize: 20)),
+        if (iconPath != null) SvgPicture.asset(iconPath),
+        if (seeAll)
+          GestureDetector(
+            onTap: () {
+              // Add action for "See All" button
+            },
+            child: Text('See All', style: TextStyle(fontFamily: 'CircularStd', fontWeight: FontWeight.w700, fontSize: 18)),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildPlanContainer(Color con, Color txt, Color blm, Color body) {
+    return Container(
+      height: 200,
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: Color.fromRGBO(255, 228, 232, 1),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                child: ButtonIcon(
+                  backgroundColor: con,
+                  svgPath: 'Assets/Icons/energy.svg',
+                  width: 64,
+                  height: 64,
+                  radius: 100,
+                  onTap: () {},
+                ),
+              ),
+              SizedBox(width: 10),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(top: 15),
+                    child: Text('WEEK 1', style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 14, fontWeight: FontWeight.w400)),
+                  ),
+                  SizedBox(height: 2),
+                  Text('Body Weight', style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 16, fontWeight: FontWeight.w700)),
+                  Text('Workout 1 of 5', style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 12, fontWeight: FontWeight.w400)),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 10),
+          Container(
+            height: 64,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 20, left: 20),
+                      child: SvgPicture.asset('Assets/Icons/cp.svg', width: 25, height: 25),
+                    ),
+                    SizedBox(width: 20),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 10),
+                        Text('Next exercise', style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 14, fontWeight: FontWeight.w400)),
+                        Text('Lower Strength', style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 16, fontWeight: FontWeight.w700)),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildIconRow(Color con) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Column(
+          children: [
+            ButtonIcon(
+              backgroundColor: con,
+              svgPath: 'Assets/Icons/star.svg',
+              width: 64,
+              height: 64,
+              radius: 18,
+              onTap: () {},
+            ),
+            Text('Special'),
+          ],
+        ),
+        SizedBox(width: 30),
+        Column(
+          children: [
+            ButtonIcon(
+              backgroundColor: con,
+              svgPath: 'Assets/Icons/slope.svg',
+              width: 64,
+              height: 64,
+              radius: 18,
+              onTap: () {},
+            ),
+            Text('Beach Rea...'),
+          ],
+        ),
+        SizedBox(width: 20),
+        Column(
+          children: [
+            ButtonIcon(
+              backgroundColor: con,
+              svgPath: 'Assets/Icons/trophy.svg',
+              width: 64,
+              height: 64,
+              radius: 18,
+              onTap: () {},
+            ),
+            Text('Full - Body'),
+          ],
+        ),
+        SizedBox(width: 30),
+        Column(
+          children: [
+            ButtonIcon(
+              backgroundColor: con,
+              svgPath: 'Assets/Icons/challenge.svg',
+              width: 64,
+              height: 64,
+              radius: 18,
+              onTap: () {},
+            ),
+            Text('Challenge'),
+          ],
+        ),
+      ],
+    );
+  }
+
+  Widget _buildInfoRow(Color bord, Color body) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Column(
+          children: [
+            _buildInfoContainer('Calories', 'Assets/Icons/flame.svg', '620.68', 'Kcal', bord),
+            SizedBox(height: 20),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SpeedPage()),
+                );
+              },
+              child: _buildInfoContainer('Steps', 'Assets/Icons/shoe.svg', '620.68', 'Kcal', bord),
+            ),
+          ],
+        ),
+        SizedBox(width: 40),
+        Container(
+          width: 158,
+          height: 252,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            border: Border.all(color: bord, width: 2),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          padding: EdgeInsets.all(16),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Text('Heart', style: TextStyle()),
+                  Spacer(),
+                  SvgPicture.asset('Assets/Icons/heartt.svg'),
+                ],
+              ),
+              SizedBox(height: 20),
+              SvgPicture.asset('Assets/Icons/shin.svg'),
+              Text('74', style: TextStyle()),
+              Text('bpm', style: TextStyle()),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildInfoContainer(String title, String iconPath, String value, String unit, Color bord) {
+    return Container(
+      width: 158,
+      height: 118,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: bord, width: 2),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      padding: EdgeInsets.all(16),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Text(title, style: TextStyle()),
+              Spacer(),
+              SvgPicture.asset(iconPath),
+            ],
+          ),
+          Spacer(),
+          Text(value, style: TextStyle()),
+          Text(unit, style: TextStyle()),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildInviteContainer(Color con, Color bord) {
+    return Container(
+      width: 367,
+      height: 108,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: bord, width: 2),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      padding: EdgeInsets.all(16),
+      child: Row(
+        children: [
+          ButtonIcon(
+            backgroundColor: con,
+            svgPath: 'Assets/Icons/trophy.svg',
+            width: 64,
+            height: 64,
+            radius: 18,
+            onTap: () {},
+          ),
+          SizedBox(width: 20),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Invite your friends', style: TextStyle()),
+              SizedBox(height: 10),
+              Text('Invite your friends to get a \n free exercise right away', style: TextStyle()),
+            ],
+          ),
+        ],
       ),
     );
   }

@@ -78,13 +78,22 @@ flutter:
     - Assets/Images/Path5.png
     - Assets/Images/Path6.png
     - Assets/Images/Path7.png
+    - Assets/Images/image.png
 
 
 
     - Assets/Icons/avat.svg
+    - Assets/Icons/shin.svg
+    - Assets/Icons/shoe.svg
+    - Assets/Icons/heartt.svg
+    - Assets/Icons/flame.svg
+    - Assets/Icons/Calendar.svg
     - Assets/Icons/heart.svg
     - Assets/Icons/location.svg
     - Assets/Icons/medal.svg
+    - Assets/Icons/Shoe.svg
+    - Assets/Icons/cp.svg
+    - Assets/Icons/energy.svg
     - Assets/Icons/challenge.svg
     - Assets/Icons/circ.svg
     - Assets/Icons/dumb.svg

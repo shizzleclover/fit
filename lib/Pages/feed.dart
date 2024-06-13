@@ -1,12 +1,9 @@
-import 'package:fitapp/Pages/calender.dart';
 import 'package:fitapp/Pages/mappage.dart';
-import 'package:fitapp/Widgets/iconbutton.dart';
-import 'package:fitapp/Widgets/textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class FeedPage extends StatefulWidget {
-   const FeedPage({Key? key}) : super(key: key);
+  const FeedPage({Key? key}) : super(key: key);
 
   @override
   State<FeedPage> createState() => _FeedPageState();
@@ -27,57 +24,6 @@ class _FeedPageState extends State<FeedPage> {
 
     return Scaffold(
       backgroundColor: body,
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 130.0),
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  CircleAvatar(
-                    radius: 30,
-                    backgroundImage: AssetImage('Assets/Icons/avat.png'), // Changed to a valid image format
-                  ),
-                  Column(
-                    children: [
-                      Text(
-                        'Hello Linh!',
-                        style: TextStyle(
-                          fontFamily: 'CircularStd', 
-                          color: txt, 
-                          fontSize: 20
-                        ),
-                      ),
-                      Text(
-                        'Thursday, 08 July',
-                        style: TextStyle(
-                          fontFamily: 'CircularStd', 
-                          color: txt, 
-                          fontSize: 20
-                        ),
-                      ),
-                    ],
-                  ),
-                  ButtonIcon(
-                    backgroundColor: Colors.black,
-                    svgPath: 'Assets/Icons/challenge.svg',
-                    width: 64,
-                    height: 64,
-                    radius: 100,
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => CalenderPage()),
-                      );
-                    },
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
       bottomNavigationBar: BottomAppBar(
         color: body,
         shape: CircularNotchedRectangle(),
@@ -90,10 +36,11 @@ class _FeedPageState extends State<FeedPage> {
                 children: [
                   IconButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => FeedPage()),
-                      );
+                      // Replace the FeedPage() with the page you want to navigate to
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => PageToNavigate()),
+                      // );
                     },
                     icon: SvgPicture.asset('Assets/Icons/heart.svg'),
                   ),
@@ -110,12 +57,34 @@ class _FeedPageState extends State<FeedPage> {
                 ],
               ),
             ),
-            CustomTextField(
-              hintText: 'Search Friends Or Neighbours',
-                 leftIconPath: 'Assets/Icons/star.svg',
-                  rightIconPath: 'Assets/Icons/star.svg',
+            Expanded(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 8.0),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 20,
+                      backgroundImage: AssetImage('Assets/Images/image.png'),
+                    ),
+                    SizedBox(width: 8),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'First line of text',
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          'Second line of text',
+                          style: TextStyle(fontSize: 14, color: txt),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
-            SizedBox(width: 1),
+              ),
+            ),
             Padding(
               padding: EdgeInsets.only(bottom: 10),
               child: IconButton(
@@ -143,19 +112,6 @@ class _FeedPageState extends State<FeedPage> {
           ],
         ),
       ),
-    );
-  }
-
-  Widget _buildBottomBarItem(int index, String iconPath, String text) {
-    return IconButton(
-      icon: _selectedIndex == index
-          ? Text(text, style: TextStyle(fontFamily: 'CircularStd', color: Colors.black))
-          : SvgPicture.asset(iconPath),
-      onPressed: () {
-        setState(() {
-          _selectedIndex = index;
-        });
-      },
     );
   }
 }
