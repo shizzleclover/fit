@@ -28,7 +28,7 @@ class RoutePage extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
-          icon: Image.asset('assets/arrow.png', height: 30),
+          icon: Image.asset('assets2/arrow.png', height: 30),
           onPressed: () {
             Navigator.push(
                 context,
@@ -42,7 +42,7 @@ class RoutePage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: Image.asset('assets/more.png', height: 30),
+            icon: Image.asset('assets2/more.png', height: 30),
             onPressed: () {
               Navigator.push(
                 context,
@@ -69,7 +69,7 @@ class RoutePage extends StatelessWidget {
                           shape: BoxShape.circle,
                         ),
                         padding: const EdgeInsets.all(15),
-                        child: Image.asset('assets/medal.png', height: 50),
+                        child: Image.asset('assets2/medal.png', height: 50),
                       ),
                       const SizedBox(width: 15),
                       const Column(
@@ -94,7 +94,7 @@ class RoutePage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 16),
-                  Image.asset('assets/route_map.png', height: 200),
+                  Image.asset('assets2/route_map.png', height: 200),
                 ],
               ),
             ),
@@ -130,7 +130,7 @@ class RoutePage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 10),
-                        Image.asset('assets/running.png', height: 50),
+                        Image.asset('assets2/running.png', height: 50),
                         const SizedBox(height: 10),
                         const Text(
                           'Total Kilocalo',
@@ -162,7 +162,7 @@ class RoutePage extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset('assets/cycling.png', height: 50),
+                        Image.asset('assets2/cycling.png', height: 50),
                         const SizedBox(height: 10),
                         const Text(
                           'Next',
@@ -208,7 +208,7 @@ class RoutePage extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Image.asset('assets/share.png', height: 25),
+                    Image.asset('assets2/share.png', height: 25),
                     const SizedBox(width: 8),
                     const Text(
                       'Share',

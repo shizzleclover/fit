@@ -58,7 +58,7 @@ class ProfilePage extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 50,
-                    backgroundImage: AssetImage('assets/tillie.png'),
+                    backgroundImage: AssetImage('assets2/tillie.png'),
                   ),
                   SizedBox(height: 10),
                   Text(
@@ -77,7 +77,7 @@ class ProfilePage extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Image.asset('assets/energy.png', height: 20),
+                    Image.asset('assets2/energy.png', height: 20),
                     const SizedBox(height: 5),
                     const Text(
                       '246',
@@ -94,7 +94,7 @@ class ProfilePage extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    Image.asset('assets/profile.png', height: 20),
+                    Image.asset('assets2/profile.png', height: 20),
                     const SizedBox(height: 5),
                     const Text(
                       '682',
@@ -222,7 +222,7 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             ActivityCard(
-              iconPath: 'assets/steps_pink.png',
+              iconPath: 'assets2/steps_pink.png',
               title: 'Indoor Run',
               duration: '24 min',
               distance: '5.56 km',
@@ -230,7 +230,7 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             ActivityCard(
-              iconPath: 'assets/cycling.png',
+              iconPath: 'assets2/cycling.png',
               title: 'Outdoor Cycle',
               duration: '24 min',
               distance: '4.22 km',
@@ -299,7 +299,7 @@ class ActivityCard extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Image.asset('assets/streak.png', height: 20),
+                  Image.asset('assets2/streak.png', height: 20),
                   const SizedBox(width: 3),
                   Text(calories),
                 ],

@@ -18,11 +18,11 @@ class CustomNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            _buildNavItem(0, 'assets/home.png', 'Home'),
-            _buildNavItem(1, 'assets/location.png', 'Map'),
+            _buildNavItem(0, 'assets2/home.png', 'Home'),
+            _buildNavItem(1, 'assets2/location.png', 'Map'),
             ImageIconButton(onTap: () => onItemTapped(2)),
-            _buildNavItem(3, 'assets/hearticon.png', 'Social'),
-            _buildNavItem(4, 'assets/award.png', 'Reward'),
+            _buildNavItem(3, 'assets2/hearticon.png', 'Social'),
+            _buildNavItem(4, 'assets2/award.png', 'Reward'),
           ],
         ),
       ),
@@ -69,7 +69,7 @@ class ImageIconButton extends StatelessWidget {
         padding: EdgeInsets.all(0),
       ),
       child: Image.asset(
-        'assets/play.png',
+        'assets2/play.png',
         width: 90,
         height: 90,
       ),

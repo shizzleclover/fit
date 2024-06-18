@@ -56,13 +56,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           children: [
             CircleAvatar(
               radius: 70,
-              backgroundImage: const AssetImage('assets/tillie.png'), // Ensure this asset exists
+              backgroundImage: const AssetImage('assets2/tillie.png'), // Ensure this asset exists
               child: Align(
                 alignment: Alignment.bottomRight,
                 child: CircleAvatar(
                   backgroundColor: Colors.white,
                   radius: 20,
-                  child: Image.asset('assets/edit.png', height: 40), // Ensure this asset exists
+                  child: Image.asset('assets2/edit.png', height: 40), // Ensure this asset exists
                 ),
               ),
             ),

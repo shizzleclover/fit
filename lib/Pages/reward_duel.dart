@@ -43,7 +43,7 @@ class DuelPage extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Image.asset('assets/upload.png', height: 30,),
+            icon: Image.asset('assets2/upload.png', height: 30,),
             onPressed: () {
               Navigator.push(
                 context,
@@ -62,7 +62,7 @@ class DuelPage extends StatelessWidget {
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 image: const DecorationImage(
-                  image: AssetImage('assets/cardbg.png'),
+                  image: AssetImage('assets2/cardbg.png'),
                   fit: BoxFit.cover,
                 ),
                 borderRadius: BorderRadius.circular(16),
@@ -83,7 +83,7 @@ class DuelPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset('assets/cycling-track.png', height: 24),
+                      Image.asset('assets2/cycling-track.png', height: 24),
                       const SizedBox(width: 8),
                       const Text(
                         'Bicycle',
@@ -146,7 +146,7 @@ class DuelPage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 20),
-                  Image.asset('assets/progressbar.png', width: 120),
+                  Image.asset('assets2/progressbar.png', width: 120),
                 ],
               ),
             ),
@@ -174,7 +174,7 @@ class DuelPage extends StatelessWidget {
             Container(
               height: 150,
               width: 300,
-              child: Image.asset('assets/duel_graph.png'),
+              child: Image.asset('assets2/duel_graph.png'),
             ),
             DayRowWidget(),
             const SizedBox(height: 32),
@@ -190,14 +190,14 @@ class DuelPage extends StatelessWidget {
                 children: [
                   const CircleAvatar(
                     radius: 24,
-                    backgroundImage: AssetImage('assets/farrah.png'),
+                    backgroundImage: AssetImage('assets2/farrah.png'),
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Row(
                         children: [
-                          Image.asset('assets/cycling-track.png', height: 24),
+                          Image.asset('assets2/cycling-track.png', height: 24),
                           const SizedBox(width: 10), 
                           const Text(
                             'Bicycle',
@@ -238,12 +238,12 @@ class DuelPage extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 10),
-                      Image.asset('assets/progressbar_pink.png', width: 150),
+                      Image.asset('assets2/progressbar_pink.png', width: 150),
                     ],
                   ),
                   const CircleAvatar(
                     radius: 24,
-                    backgroundImage: AssetImage('assets/alex.png'),
+                    backgroundImage: AssetImage('assets2/alex.png'),
                   ),
                 ],
               ),

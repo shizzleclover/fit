@@ -25,7 +25,7 @@ class ProfileFriends extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xffFF6079),
         leading: IconButton(
-          icon: Image.asset('assets/back_pink.png'),
+          icon: Image.asset('assets2/back_pink.png'),
           onPressed: () {
           },
         ),
@@ -36,7 +36,7 @@ class ProfileFriends extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Image.asset('assets/more_pink.png'),
+            icon: Image.asset('assets2/more_pink.png'),
             onPressed: () {
               Navigator.push(
                 context,
@@ -53,7 +53,7 @@ class ProfileFriends extends StatelessWidget {
             const SizedBox(height: 100),
             const CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage('assets/tillie.png'),
+              backgroundImage: AssetImage('assets2/tillie.png'),
             ),
             const SizedBox(height: 10),
             const Text(
@@ -151,7 +151,7 @@ class ProfileFriends extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 25,
-                              backgroundImage: AssetImage('assets/linh.png'),
+                              backgroundImage: AssetImage('assets2/linh.png'),
                             ),
                             SizedBox(width: 10),
                             Expanded(
@@ -184,7 +184,7 @@ class ProfileFriends extends StatelessWidget {
                             'I am very happy to be with Cafit in training sessions and how about you?',
                           ),
                         ),
-                        Image.asset('assets/gear.png'),
+                        Image.asset('assets2/gear.png'),
                       ],
                     ),
                   ),

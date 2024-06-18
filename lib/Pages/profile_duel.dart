@@ -60,7 +60,7 @@ class PDuelPage extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 50,
-                      backgroundImage: AssetImage('assets/tillie.png'),
+                      backgroundImage: AssetImage('assets2/tillie.png'),
                     ),
                     SizedBox(height: 10),
                     Text(
@@ -179,7 +179,7 @@ class PDuelPage extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           radius: 26,
-                          backgroundImage: AssetImage('assets/farrah.png'),
+                          backgroundImage: AssetImage('assets2/farrah.png'),
                         ),
                         Column(
                           children: [
@@ -202,7 +202,7 @@ class PDuelPage extends StatelessWidget {
                         ),
                         CircleAvatar(
                           radius: 26,
-                          backgroundImage: AssetImage('assets/alex.png'),
+                          backgroundImage: AssetImage('assets2/alex.png'),
                         ),
                       ],
                     ),
@@ -248,7 +248,7 @@ class CustomProgressBar extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10.0),
             child: Image.asset(
-              'assets/gradient_cycling.png',
+              'assets2/gradient_cycling.png',
               height: 50,
             ),
           ),
@@ -289,7 +289,7 @@ class CustomProgressBar extends StatelessWidget {
                   ),
                   const SizedBox(height: 15.0),
                   Image.asset(
-                    'assets/progressbar_pink.png',
+                    'assets2/progressbar_pink.png',
                     width: 180.0,
                   ),
                 ],

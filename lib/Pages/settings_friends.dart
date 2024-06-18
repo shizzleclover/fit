@@ -28,22 +28,22 @@ class _CloseFriendsScreenState extends State<CloseFriendsScreen> {
   List<Map<String, dynamic>> friends = [
     {
       "name": "Joseph Martinez",
-      "image": "assets/ivan.png",
+      "image": "assets2/ivan.png",
       "isCloseFriend": true,
     },
     {
       "name": "Wayne Caldwell",
-      "image": "assets/alex.png",
+      "image": "assets2/alex.png",
       "isCloseFriend": true,
     },
     {
       "name": "Wayne Leonard",
-      "image": "assets/linh.png",
+      "image": "assets2/linh.png",
       "isCloseFriend": true,
     },
     {
       "name": "Mildred Castillo",
-      "image": "assets/farrah.png",
+      "image": "assets2/farrah.png",
       "isCloseFriend": false,
     },
   ];
@@ -53,7 +53,7 @@ class _CloseFriendsScreenState extends State<CloseFriendsScreen> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Image.asset('assets/arrow.png'),
+          icon: Image.asset('assets2/arrow.png'),
           onPressed: () {
             Navigator.push(
               context,
@@ -68,7 +68,7 @@ class _CloseFriendsScreenState extends State<CloseFriendsScreen> {
         ),
         actions: [
           IconButton(
-            icon: Image.asset('assets/friends.png'),
+            icon: Image.asset('assets2/friends.png'),
             onPressed: () {},
           ),
         ],
@@ -113,7 +113,7 @@ class _CloseFriendsScreenState extends State<CloseFriendsScreen> {
               },
             ),
           ),
-          Image.asset('assets/ellipse.png'),
+          Image.asset('assets2/ellipse.png'),
         ],
       ),
     );

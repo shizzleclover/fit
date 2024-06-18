@@ -34,7 +34,7 @@ class RewardPage extends StatelessWidget {
               Row(
                 children: [
                   const CircleAvatar(
-                    backgroundImage: AssetImage('assets/tillie.png'),
+                    backgroundImage: AssetImage('assets2/tillie.png'),
                     radius: 30,
                   ),
                   const SizedBox(width: 16),
@@ -65,7 +65,7 @@ class RewardPage extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => DetailsPage()),
                       );
                     },
-                    child: Image.asset('assets/search.png'),
+                    child: Image.asset('assets2/search.png'),
                   ),
                 ],
               ),
@@ -85,7 +85,7 @@ class RewardPage extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Image.asset('assets/steps.png', height: 60),
+                        Image.asset('assets2/steps.png', height: 60),
                         const SizedBox(width: 5),
                         const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -135,7 +135,7 @@ class RewardPage extends StatelessWidget {
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   image: const DecorationImage(
-                    image: AssetImage('assets/cardbg.png'),
+                    image: AssetImage('assets2/cardbg.png'),
                     fit: BoxFit.cover,
                   ),
                   borderRadius: BorderRadius.circular(12),
@@ -152,7 +152,7 @@ class RewardPage extends StatelessWidget {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Image.asset('assets/medal.png', height: 30),
+                                  Image.asset('assets2/medal.png', height: 30),
                                   const SizedBox(height: 8),
                                   const Text(
                                     'Your Available points',
@@ -182,7 +182,7 @@ class RewardPage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 16, height: 90),
-                        Image.asset('assets/trophy.png', height: 100),
+                        Image.asset('assets2/trophy.png', height: 100),
                       ],
                     ),
                     const SizedBox(height: 8),
@@ -215,7 +215,7 @@ class RewardPage extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
-                    Image.asset('assets/more.png', height: 40),
+                    Image.asset('assets2/more.png', height: 40),
                   ],
                 ),
               ),
@@ -231,7 +231,7 @@ class RewardPage extends StatelessWidget {
                 child: Row(
                   children: [
                     const CircleAvatar(
-                      backgroundImage: AssetImage('assets/ivan.png'),
+                      backgroundImage: AssetImage('assets2/ivan.png'),
                       radius: 25,
                     ),
                     const SizedBox(width: 16),
@@ -243,7 +243,7 @@ class RewardPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 20),
-                    Image.asset('assets/winner.png', height: 30),
+                    Image.asset('assets2/winner.png', height: 30),
                     const Text(
                       '4h 20min',
                       style: TextStyle(
@@ -268,11 +268,11 @@ class RewardPage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Image.asset('assets/home.png', height: 30),
-              Image.asset('assets/location.png', height: 30),
-              Image.asset('assets/play.png', height: 60),
+              Image.asset('assets2/home.png', height: 30),
+              Image.asset('assets2/location.png', height: 30),
+              Image.asset('assets2/play.png', height: 60),
               IconButton(
-                icon: Image.asset('assets/hearticon.png', height: 30),
+                icon: Image.asset('assets2/hearticon.png', height: 30),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -322,7 +322,7 @@ class RouteInfoWidget extends StatelessWidget {
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
-                image: AssetImage('assets/route.png'),
+                image: AssetImage('assets2/route.png'),
                 fit: BoxFit.cover,
               ),
             ),

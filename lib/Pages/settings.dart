@@ -27,7 +27,7 @@ class SettingsScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: Image.asset('assets/arrow.png'),
+          icon: Image.asset('assets2/arrow.png'),
           onPressed: () {
             Navigator.push(
               context,
@@ -42,7 +42,7 @@ class SettingsScreen extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Image.asset('assets/more.png'),
+            icon: Image.asset('assets2/more.png'),
             onPressed: () {},
           ),
         ],
@@ -57,7 +57,7 @@ class SettingsScreen extends StatelessWidget {
             children: [
               const CircleAvatar(
                 radius: 60,
-                backgroundImage: AssetImage('assets/tillie.png'),
+                backgroundImage: AssetImage('assets2/tillie.png'),
               ),
               const SizedBox(width: 16),
               const Column(
@@ -94,7 +94,7 @@ class SettingsScreen extends StatelessWidget {
             leading: CircleAvatar(
               backgroundColor: Colors.white,
               radius: 40,
-              child: Image.asset('assets/location_icon.png', height: 200, width: 200),
+              child: Image.asset('assets2/location_icon.png', height: 200, width: 200),
             ),
             title: const Text('Location', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             trailing: const Icon(Icons.arrow_forward_ios, color: Colors.black, size: 20),
@@ -104,7 +104,7 @@ class SettingsScreen extends StatelessWidget {
             leading: CircleAvatar(
               backgroundColor: Colors.white,
               radius: 40,
-              child: Image.asset('assets/notification_icons.png', height: 200, width: 200),
+              child: Image.asset('assets2/notification_icons.png', height: 200, width: 200),
             ),
             title: const Text('Notification', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             trailing: const Icon(Icons.arrow_forward_ios, color: Colors.black, size: 20),
@@ -117,7 +117,7 @@ class SettingsScreen extends StatelessWidget {
             leading: CircleAvatar(
               backgroundColor: Colors.white,
               radius: 40,
-              child: Image.asset('assets/close_friends_icons.png', height: 200, width: 200),
+              child: Image.asset('assets2/close_friends_icons.png', height: 200, width: 200),
             ),
             title: const Text('Close Friends', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             trailing: const Icon(Icons.arrow_forward_ios, color: Colors.black, size: 20),
@@ -130,7 +130,7 @@ class SettingsScreen extends StatelessWidget {
             leading: CircleAvatar(
               backgroundColor: Colors.white,
               radius: 40,
-              child: Image.asset('assets/sound_icon.png', height: 200, width: 200),
+              child: Image.asset('assets2/sound_icon.png', height: 200, width: 200),
             ),
             title: const Text('Sounds', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             trailing: const Icon(Icons.arrow_forward_ios, color: Colors.black, size: 20),
@@ -143,7 +143,7 @@ class SettingsScreen extends StatelessWidget {
             leading: CircleAvatar(
               backgroundColor: Colors.white,
               radius: 40,
-              child: Image.asset('assets/privacy_icon.png', height: 200, width: 200),
+              child: Image.asset('assets2/privacy_icon.png', height: 200, width: 200),
             ),
             title: const Text('Privacy', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             trailing: const Icon(Icons.arrow_forward_ios, color: Colors.black, size: 20),

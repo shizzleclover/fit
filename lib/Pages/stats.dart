@@ -60,7 +60,7 @@ class StatsPage extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 50,
-                      backgroundImage: AssetImage('assets/tillie.png'),
+                      backgroundImage: AssetImage('assets2/tillie.png'),
                     ),
                     SizedBox(height: 10),
                     Text(
@@ -79,7 +79,7 @@ class StatsPage extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Image.asset('assets/energy.png', height: 20),
+                      Image.asset('assets2/energy.png', height: 20),
                       const SizedBox(height: 5),
                       const Text(
                         '246',
@@ -96,7 +96,7 @@ class StatsPage extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      Image.asset('assets/profile.png', height: 20),
+                      Image.asset('assets2/profile.png', height: 20),
                       const SizedBox(height: 5),
                       const Text(
                         '682',
@@ -180,19 +180,19 @@ class StatsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   RewardsRow(
-                    imagePath: 'assets/workout.png',
+                    imagePath: 'assets2/workout.png',
                     title: '7-Workout\nWeek',
                   ),
                   RewardsRow(
-                    imagePath: 'assets/goal.png',
+                    imagePath: 'assets2/goal.png',
                     title: 'Move Goal\n200%',
                   ),
                   RewardsRow(
-                    imagePath: 'assets/move.png',
+                    imagePath: 'assets2/move.png',
                     title: 'New Move\nRecord',
                   ),
                   RewardsRow(
-                    imagePath: 'assets/longest.png',
+                    imagePath: 'assets2/longest.png',
                     title: 'Longest Move\nStreak',
                   ),
                 ],
@@ -216,7 +216,7 @@ class StatsPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    Image.asset('assets/line.png'),
+                    Image.asset('assets2/line.png'),
                     const SizedBox(height: 16),
                     DayRowWidget(),
                   ],
@@ -248,17 +248,17 @@ class StatsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Records(
-                    imgPath: 'assets/blackheart.png',
+                    imgPath: 'assets2/blackheart.png',
                     title: '246 Kcal',
                     subtitle: 'Last 7 days',
                   ),
                   Records(
-                    imgPath: 'assets/streak.png',
+                    imgPath: 'assets2/streak.png',
                     title: '200 Kcal',
                     subtitle: 'All Time',
                   ),
                   Records(
-                    imgPath: 'assets/energy.png',
+                    imgPath: 'assets2/energy.png',
                     title: '300 Kcal',
                     subtitle: 'Average',
                   ),

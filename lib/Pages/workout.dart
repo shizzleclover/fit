@@ -59,7 +59,7 @@ class AccountScreen extends StatelessWidget {
                 const Center(
                   child: CircleAvatar(
                     radius: 70,
-                    backgroundImage: AssetImage('assets/tillie.png'),
+                    backgroundImage: AssetImage('assets2/tillie.png'),
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -91,7 +91,7 @@ class AccountScreen extends StatelessWidget {
                     backgroundColor: Colors.white,
                     radius: 40,
                     child: Image.asset(
-                      'assets/goals.png',
+                      'assets2/goals.png',
                       height: 40,
                       width: 40,
                     ),
@@ -111,7 +111,7 @@ class AccountScreen extends StatelessWidget {
                     backgroundColor: Colors.white,
                     radius: 40,
                     child: Image.asset(
-                      'assets/body.png',
+                      'assets2/body.png',
                       height: 40,
                       width: 40,
                     ),
@@ -131,7 +131,7 @@ class AccountScreen extends StatelessWidget {
                     backgroundColor: Colors.white,
                     radius: 40,
                     child: Image.asset(
-                      'assets/settings.png',
+                      'assets2/settings.png',
                       height: 40,
                       width: 40,
                     ),
@@ -153,7 +153,7 @@ class AccountScreen extends StatelessWidget {
           ),
           const SizedBox(height: 0), // Adjust the space between the settings list and the image
           Center(
-            child: Image.asset('assets/ellipse.png'),
+            child: Image.asset('assets2/ellipse.png'),
           ),
         ],
       ),

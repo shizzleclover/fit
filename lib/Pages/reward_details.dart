@@ -28,7 +28,7 @@ class DetailsPage extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
-          icon: Image.asset('assets/arrow.png', height: 70,),
+          icon: Image.asset('assets2/arrow.png', height: 70,),
           onPressed: () {
             Navigator.push(
               context,
@@ -42,7 +42,7 @@ class DetailsPage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: Image.asset('assets/more.png', height: 70,),
+            icon: Image.asset('assets2/more.png', height: 70,),
             onPressed: () {
               Navigator.push(
                 context,
@@ -75,7 +75,7 @@ class DetailsPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  Image.asset('assets/line.png'),
+                  Image.asset('assets2/line.png'),
                   const SizedBox(height: 16),
                   DayRowWidget(),
                 ],
@@ -93,7 +93,7 @@ class DetailsPage extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Image.asset('assets/steps.png', height: 60),
+                      Image.asset('assets2/steps.png', height: 60),
                       const SizedBox(width: 10),
                       const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -117,7 +117,7 @@ class DetailsPage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 16),
-                  Image.asset('assets/graph.png'),
+                  Image.asset('assets2/graph.png'),
                 ],
               ),
             ),
@@ -135,7 +135,7 @@ class DetailsPage extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Image.asset('assets/share.png', height: 25),
+                    Image.asset('assets2/share.png', height: 25),
                     const SizedBox(width: 8),
                     const Text(
                       'Share',
