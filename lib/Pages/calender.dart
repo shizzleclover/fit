@@ -32,19 +32,18 @@ class CalenderPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 56, // Smaller size for the icon container
-                        width: 56,
+                        height: 35,  
+                        width: 35,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                           border: Border.all(color: Colors.black),
                         ),
                         child: SvgPicture.asset(
-                          'Assets/Icons/le.svg',
-                          height: 30,
-                          width: 30,
+                          'Assets/Icons/e.svg',
+                         
                         ),
                       ),
-                      SizedBox(width: 60), // Space between icon and text
+                      SizedBox(width: 110), 
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [

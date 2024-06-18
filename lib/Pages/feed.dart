@@ -1,6 +1,8 @@
+import 'package:fitapp/Pages/feeddetail.dart';
 import 'package:fitapp/Pages/homepage.dart';
 import 'package:fitapp/Pages/mappage.dart';
-import 'package:fitapp/Pages/message.dart';
+ 
+import 'package:fitapp/Pages/messages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -34,26 +36,17 @@ class _FeedPageState extends State<FeedPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    height: 64,
-                    width: 64,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(100),
-                      border: Border.all(color: Colors.black),
-                    ),
-                    child: Image.asset('Assets/Images/image.png'),
-                  ),
+                  
+                     Image.asset('Assets/Images/roun2.png'),
+                  
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Hello Linh!',
-                        style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 20),
+                        'Linh\'s Post',
+                        style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 20, fontWeight: FontWeight.w700),
                       ),
-                      Text(
-                        'Thursday, 08 July',
-                        style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 20),
-                      ),
+                      
                     ],
                   ),
                   GestureDetector(
@@ -84,46 +77,106 @@ class _FeedPageState extends State<FeedPage> {
               ),
               SizedBox(height: 20),
               TextField(
-                
                 decoration: InputDecoration(
-                  
                   filled: true,
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(50.0),
-                    borderSide: BorderSide(color: bord),
+                    borderSide: BorderSide(color: txt),
                   ),
-                  prefixIcon: SvgPicture.asset('Assets/Icon/search.svg'),
+                  prefixIcon: SvgPicture.asset('Assets/Icons/se.svg',
+                  height: 30,
+                  width: 30,
+                  ),
                   suffixIcon: SvgPicture.asset('Assets/Icons/Filter.svg'),
                   hintText: 'Search friends or neighbors',
                   contentPadding: EdgeInsets.symmetric(vertical: 20.0),
                 ),
               ),
-               SizedBox(height: 20,),
-                  Row(
-                    children: [
-                      Container(
-                        height: 64,
-                        width: 64,
-                        decoration: BoxDecoration(
-                          color: conta,
-                          borderRadius: BorderRadius.circular(100)
-                        ),
-                        child: SvgPicture.asset('Assets/Icons/'),
-                      ),
-                      SizedBox( width: 30,),
-                      Container(
-                        height: 64,
-                        width: 64,
-                        decoration: BoxDecoration(
-                           
-                          border: Border.all(color: conta),
-                          borderRadius: BorderRadius.circular(100)
-                        ),
-                        child: SvgPicture.asset('Assets/Images/'),
-                      ),
-                    ],
+              SizedBox(height: 20),
+              Row(
+                children: [
+                 Image.asset('Assets/Images/roun.png'),
+                  SizedBox(width: 30),
+                   Image.asset('Assets/Images/roun2.png'),
+                  SizedBox(width: 30),
+                  Container(
+                    height: 64,
+                    width: 64,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: conta),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child: SvgPicture.asset('Assets/Images/'),
                   ),
+                  SizedBox(width: 30),
+                    Image.asset('Assets/Images/roun2.png'),
+                ],
+              ),
+              SizedBox(height: 30),
+              GestureDetector(
+                onTap: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyFeedDetails()),
+                    );
+                },
+                child: Container(
+                  height: 386,
+                  width: 360,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: bord),
+                    borderRadius: BorderRadius.circular(40),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0), // Add padding around the entire content
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center, // Center the elements vertically
+                      crossAxisAlignment: CrossAxisAlignment.center, // Center the elements horizontally
+                      children: [
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image.asset('Assets/Images/roun2.png'),
+                            SizedBox(width: 20),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Linh Nguyen'),
+                                SizedBox(height: 5),
+                                Text('2s ago'),
+                              ],
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 20),
+                        Text('I am very happy to be with Cafit in'),
+                        SizedBox(height: 5),
+                        Text('training sessions and how about you?'),
+                        SizedBox(height: 20),
+                        Image.asset('Assets/Images/exe.png'),
+                        SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center, // Center the row elements horizontally
+                          children: [
+                            SvgPicture.asset('Assets/Icons/love.svg'),
+                            SizedBox(width: 5),
+                            Text('121'),
+                            SizedBox(width: 30),
+                            SvgPicture.asset('Assets/Icons/comment.svg'),
+                            SizedBox(width: 5),
+                            Text('34'),
+                            SizedBox(width: 30),
+                            SvgPicture.asset('Assets/Icons/share.svg'),
+                            SizedBox(width: 5),
+                            Text('Share'),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

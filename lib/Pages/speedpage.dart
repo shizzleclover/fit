@@ -9,244 +9,353 @@ class SpeedPage extends StatelessWidget {
     Color txt = Color.fromRGBO(127, 127, 127, 1);
     Color bord = Color.fromRGBO(191, 191, 191, 1);
     Color blm = Color.fromRGBO(4, 4, 21, 1);
-    Color bottom = Color.fromRGBO(255, 228, 232, 1);
-    Color body = Color.fromRGBO(255, 255, 255, 1);
-    Color con = Color.fromRGBO(255, 96, 121, 1);
-    Color conta = Color.fromRGBO(255, 96, 121, 1);
     Color tim = Color.fromRGBO(255, 228, 232, 1);
+    Color conta = Color.fromRGBO(255, 96, 121, 1);
 
     return Scaffold(
-      body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(top: 0.0, bottom: 0),
-                child: Container(
-                  height: 150,
-                  width: 150,
-                  decoration: BoxDecoration(
-                    color: tim,
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                  child: Center(
-                    child: SvgPicture.asset(
-                      'Assets/Icons/shoe.svg',
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(height: 50),
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                color: tim,
+                borderRadius: BorderRadius.circular(100),
+              ),
+              child: Center(
+                child: SvgPicture.asset('Assets/Icons/shoe.svg'),
+              ),
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Steps',
+              style: TextStyle(
+                fontFamily: 'CircularStd',
+                fontSize: 24,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              '1 240 Steps',
+              style: TextStyle(
+                fontFamily: 'CircularStd',
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+                color: txt,
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              height: 34,
+              width: 327,
+              decoration: BoxDecoration(
+                color: tim,
+                borderRadius: BorderRadius.circular(50),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 27,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(50),
                     ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              Text(
-                'Steps',
-                style: TextStyle(
-                  fontFamily: 'CircularStd',
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              SizedBox(height: 10),
-              Text(
-                '1 240 Steps',
-                style: TextStyle(
-                  fontFamily: 'CircularStd',
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400,
-                  color: txt,
-                ),
-              ),
-              SizedBox(height: 10),
-              Container(
-                height: 34,
-                width: 327,
-                decoration: BoxDecoration(
-                  color: tim,
-                  borderRadius: BorderRadius.circular(50),
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 100,
-                      height: 27,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Daily',
-                          style: TextStyle(
-                            color: conta,
-                            fontSize: 14,
-                            fontFamily: 'CircularStd',
-                            fontWeight: FontWeight.w700,
-                          ),
+                    child: Center(
+                      child: Text(
+                        'Daily',
+                        style: TextStyle(
+                          color: conta,
+                          fontSize: 14,
+                          fontFamily: 'CircularStd',
+                          fontWeight: FontWeight.w700,
                         ),
                       ),
                     ),
-                    SizedBox(width: 50),
-                    Text('Weekly', style: TextStyle()),
-                    SizedBox(width: 50),
-                    Text('Monthly', style: TextStyle()),
+                  ),
+                  Text('Weekly', style: TextStyle()),
+                  Text('Monthly', style: TextStyle()),
+                ],
+              ),
+            ),
+            SizedBox(height: 20),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Today',
+                      style: TextStyle(
+                        color: txt,
+                        fontFamily: 'CircularStd',
+                        fontWeight: FontWeight.w400,
+                        fontSize: 14,
+                      ),
+                    ),
+                    SizedBox(height: 2),
+                    Text(
+                      'Thu, 08 July',
+                      style: TextStyle(
+                        color: blm,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w600,
+                        fontFamily: 'CircularStd',
+                      ),
+                    ),
                   ],
                 ),
               ),
-              SizedBox(height: 20),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                  child: Column(
+            ),
+            SizedBox(height: 20),
+            SvgPicture.asset('Assets/Images/ocean.svg', height: 200),
+            SizedBox(height: 20),
+            Divider(color: bord, height: 2),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Column(
+                  children: [
+                    Text(
+                      '4880',
+                      style: TextStyle(
+                        fontSize: 36,
+                        fontFamily: 'CircularStd',
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    Text(
+                      'Total Kilocalories',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'CircularStd',
+                        fontWeight: FontWeight.w700,
+                        color: txt,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 20),
+                Container(
+                  height: 17,
+                  width: 38,
+                  decoration: BoxDecoration(
+                    color: conta,
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: Center(
+                    child: SvgPicture.asset('Assets/Icons/cp.svg'),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Today',
-                        style: TextStyle(
-                          color: txt,
-                          fontFamily: 'CircularStd',
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                        ),
+                      Row(
+                        children: [
+                          Text(
+                            '480',
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontFamily: 'CircularStd',
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(width: 8),
+                          SvgPicture.asset('Assets/Icons/your_icon.svg'),
+                        ],
                       ),
                       SizedBox(height: 2),
                       Text(
-                        'Thu, 08 July',
+                        'Calories',
                         style: TextStyle(
-                          color: blm,
-                          fontSize: 24,
-                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                          fontFamily: 'CircularStd',
+                          fontWeight: FontWeight.w700,
+                          color: txt,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            '480',
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontFamily: 'CircularStd',
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(width: 8),
+                          SvgPicture.asset('Assets/Icons/your_icon.svg'),
+                        ],
+                      ),
+                      SizedBox(height: 2),
+                      Text(
+                        'Calories',
+                        style: TextStyle(
+                          fontSize: 16,
                           fontFamily: 'CircularStd',
                         ),
                       ),
                     ],
                   ),
-                ),
-              ),
-              SizedBox(height: 20),
-              SvgPicture.asset('Assets/Images/ocean.svg', height: 200,),
-              Divider(color: bord, height: 2,),
-              SizedBox(height: 20),
-              Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Column(
-                      children: [
-                        Text('4880', style: TextStyle(fontSize: 36)),
-                        Text('Total Kilocalories'),
-                      ],
-                    ),
-                    SizedBox(width: 8), // Add some space between the text and the icon
-                    Container(
-                      height: 17,
-                      width: 38,
-                      decoration: BoxDecoration(
-                        color: conta,
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
                         children: [
-                          SvgPicture.asset('Assets/Icons/cp.svg',),
+                          Text(
+                            '480',
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontFamily: 'CircularStd',
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(width: 8),
+                          SvgPicture.asset('Assets/Icons/your_icon.svg'),
                         ],
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20,),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24.0),
-              child: Row(
-                children: [
-                      Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Text('480', style: TextStyle(fontSize: 24)),
-                        SizedBox(width: 8),
-                        SvgPicture.asset('Assets/Icons/your_icon.svg'), 
-                                              ],
-                    ),
-                    SizedBox(height: 5),
-                    Text('Calories', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
-                SizedBox(width: 20,),
-                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Text('480', style: TextStyle(fontSize: 24)),
-                        SizedBox(width: 8),
-                        SvgPicture.asset('Assets/Icons/your_icon.svg'), 
-                                              ],
-                    ),
-                    SizedBox(height: 5),
-                    Text('Calories', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
-                SizedBox(height: 40,),
-                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Text('480', style: TextStyle(fontSize: 24)),
-                        SizedBox(width: 8),
-                        SvgPicture.asset('Assets/Icons/your_icon.svg'), 
-                                              ],
-                    ),
-                    SizedBox(height: 5),
-                    Text('Calories', style: TextStyle(fontSize: 16)),
-                  ],
-                ),
+                      SizedBox(height: 5),
+                      Text(
+                        'Calories',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontFamily: 'CircularStd',
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
-               
-              ),
-              SizedBox(height: 30,),
-              Column(
-                children: [
-                     Row(
-                children: [
-                      Text('Friends Activity', style: TextStyle(),),
-                      SizedBox(width: 280,),
-                      SvgPicture.asset('Assets/Icons/circ.svg')
-                ],
-              ),
-              SizedBox(height: 30,),
-              Container(
-                width: 327,
-                height: 72,
-
-                decoration: BoxDecoration(
-                  border: Border.all(color: bord),
-                  borderRadius: BorderRadius.circular(50),
+            ),
+            SizedBox(height: 30),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    SizedBox(width: 40),
+                    Text(
+                      'Friends Activity',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontFamily: 'CircularStd',
+                        fontWeight: FontWeight.w700,
+                        color: txt,
+                      ),
+                    ),
+                    SizedBox(width: 200),
+                    SvgPicture.asset('Assets/Icons/circ.svg'),
+                  ],
                 ),
-              ),
-              SizedBox(height: 20,),
-               Container(
-                width: 327,
-                height: 72,
-
-                decoration: BoxDecoration(
-                  border: Border.all(color: bord),
-                  borderRadius: BorderRadius.circular(50),
+                SizedBox(height: 30),
+                Container(
+                  width: 327,
+                  height: 72,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: bord),
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: 56,
+                          height: 56,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                           
+                          ),
+                          child: Image.asset('Assets/Images/roun2.png'),
+                        ),
+                      ),
+                      SizedBox(width: 16),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Alfred Owen', style: TextStyle(fontSize: 16, fontFamily: 'CircularStd', fontWeight: FontWeight.w700)),
+                            SizedBox(height: 5,),
+                            Text('400 Calories ', style: TextStyle(fontSize: 14,  fontFamily: 'CircularStd', color: txt)),
+                          ],
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      SvgPicture.asset('Assets/Icons/shoe.svg'),
+                      SizedBox(width: 8),
+                      Text('2.1k Steps', style: TextStyle(fontSize: 12, fontFamily: 'CircularStd', fontWeight: FontWeight.w700),),
+                    ],
+                  ),
                 ),
-              ),
-                ],
-              ),
-             
-            ],
-
-          ),
+                SizedBox(height: 20),
+                Container(
+                  width: 327,
+                  height: 72,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: bord),
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: 56,
+                          height: 56,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                           
+                          ),
+                          child: Image.asset('Assets/Images/roun.png'),
+                        ),
+                      ),
+                      SizedBox(width: 16),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Linh Nguyen', style: TextStyle(fontSize: 12, fontFamily: 'CircularStd', fontWeight: FontWeight.w700)),
+                            SizedBox(height: 5,),
+                            Text('400 Calories ', style: TextStyle(fontSize: 14, color: txt)),
+                          ],
+                        ),
+                      ),
+                      SizedBox(width: 16),
+                    SvgPicture.asset('Assets/Icons/shoe.svg'),
+                      SizedBox(width: 8),
+                      Text('2.1k Steps', style: TextStyle(fontSize: 12, fontFamily: 'CircularStd', fontWeight: FontWeight.w700),),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+          ],
         ),
       ),
     );
   }
 }
-

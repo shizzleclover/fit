@@ -22,42 +22,7 @@ class MainScreen extends StatelessWidget {
               width: 1,
             ),
           ),
-          // Positioned.fill(
-          //   child: Image.asset(
-          //     'Assets/Images/Path.png',
-          //   ),
-          // ),
-          // Positioned.fill(
-          //   child: Image.asset(
-          //     'Assets/Images/Path2.png',  
-          //   ),
-          // ),
-          // Positioned.fill(
-          //   child: Image.asset(
-          //     'Assets/Images/Path3.png',  
-          //   ),
-          // ),
-          // Positioned.fill(
-          //   child: Image.asset(
-          //     'Assets/Images/Path4.png',  
-          //   ),
-          // ),
-          // Positioned.fill(
-          //   child: Image.asset(
-          //     'Assets/Images/Path5.png',  
-          //   ),
-          // ),
-          // Positioned.fill(
-          //   child: Image.asset(
-          //     'Assets/Images/Path6.png',  
-          //   ),
-          // ),
-          // Positioned.fill(
-          //   child: Image.asset(
-          //     'Assets/Images/Path7.png',  
-          //     width: 1,
-          //   ),
-          // ),
+          
           Positioned(
             top: 0,
             right: 0,

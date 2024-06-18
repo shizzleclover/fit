@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  intl: ^0.17.0
   flutter_svg: ^2.0.10+1
 
 dev_dependencies:
@@ -80,10 +81,82 @@ flutter:
     - Assets/Images/Path7.png
     - Assets/Images/image.png
     - Assets/Images/ocean.svg
+    - Assets/Images/exe.png
+    - Assets/Images/map.png
+    - Assets/Images/roun.png
+    - Assets/Images/roun2.png
+
+
+    - assets/tillie.png
+    - assets/cycling.png
+    - assets/streak.png
+    - assets/map.png
+    - assets/more.png
+    - assets/gear.png
+    - assets/linh.png
+    - assets/ivan.png
+    - assets/arrow.png
+    - assets/home.png
+    - assets/hearticon.png
+    - assets/award.png
+    - assets/location.png
+    - assets/share.png
+    - assets/play.png
+    - assets/trophy.png
+    - assets/medal.png
+    - assets/cardbg.png
+    - assets/play.png
+    - assets/search.png
+    - assets/steps.png
+    - assets/winner.png
+    - assets/route.png
+    - assets/line.png
+    - assets/graph.png
+    - assets/route_map.png
+    - assets/running.png
+    - assets/cycling-track.png
+    - assets/progressbar.png
+    - assets/duel_graph.png
+    - assets/progressbar_pink.png
+    - assets/farrah.png
+    - assets/alex.png
+    - assets/upload.png
+    - assets/steps_pink.png
+    - assets/energy.png
+    - assets/profile.png
+    - assets/workout.png
+    - assets/goal.png
+    - assets/longest.png
+    - assets/move.png
+    - assets/blackheart.png
+    - assets/gradient_cycling.png
+    - assets/location_icon.png
+    - assets/notification_icons.png
+    - assets/close_friends_icons.png
+    - assets/sound_icon.png
+    - assets/privacy_icon.png
+    - assets/edit.png
+    - assets/friends.png
+    - assets/ellipse.png
+    - assets/body.png
+    - assets/goals.png
+    - assets/settings.png
+    - assets/more_pink.png
+    - assets/back_pink.png
+    - assets/chat.png
+    - assets/heart.png
+    
 
 
 
     - Assets/Icons/avat.svg
+    - Assets/Icons/e.svg
+    - Assets/Icons/add.svg
+    - Assets/Icons/love.svg
+    - Assets/Icons/la.svg
+    - Assets/Icons/se.svg
+    - Assets/Icons/share.svg
+    - Assets/Icons/comment.svg
     - Assets/Icons/hoe.svg
     - Assets/Icons/le.svg
     - Assets/Icons/chat.svg

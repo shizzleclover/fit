@@ -15,70 +15,66 @@ class _HomePageState extends State<HomePage> {
   Color bottom = Color.fromRGBO(255, 228, 232, 1);
   Color bdy = Color.fromRGBO(255, 255, 255, 1);
   Color txt2 = Color.fromRGBO(127, 127, 127, 1);
-    Color bord = Color.fromRGBO(191, 191, 191, 1);
-    Color body = Color.fromRGBO(255, 255, 255, 1);
-    Color con = Color.fromRGBO(255, 96, 121, 1);
-    Color conta = Color.fromRGBO(255, 96, 121, 1);
+  Color bord = Color.fromRGBO(191, 191, 191, 1);
+  Color body = Color.fromRGBO(255, 255, 255, 1);
+  Color con = Color.fromRGBO(255, 96, 121, 1);
+  Color conta = Color.fromRGBO(255, 96, 121, 1);
 
   Widget buildContainer() {
-    return       
-              Container(
-                width: 120, // Set the desired width
-                height: 120, // Set the desired height
-                decoration: BoxDecoration(
-                  color: conta,
-                  
-                  borderRadius: BorderRadius.circular(28),
+    return Container(
+      width: 120, // Set the desired width
+      height: 120, // Set the desired height
+      decoration: BoxDecoration(
+        color: conta,
+        borderRadius: BorderRadius.circular(28),
+      ),
+      padding: EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start, // Align items to the left
+        children: [
+          SvgPicture.asset(
+            'Assets/Icons/dumb.svg',
+            // height: 50,
+            // width: 50,
+            // color: blm,
+          ),
+          SizedBox(height: 10),
+          SizedBox(width: 10),
+          Row(
+            children: [
+              Text(
+                '628',
+                style: TextStyle(
+                  fontFamily: 'CircularStd',
+                  color: body,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
                 ),
-                padding: EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start, // Align items to the left
-                  children: [
-                    SvgPicture.asset(
-                      'Assets/Icons/dumb.svg',
-                      // height: 50,
-                      // width: 50,
-                      // color: blm,
-                    ),
-                    SizedBox(height: 10 ,),
-                    SizedBox(width: 10,),
-                    Row(
-                    
-                      children: [
-                        
-                        Text(
-                          '628',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            color: body,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'Kcal',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            color: body,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Text(
-                      'Dumbbell',
-                      style: TextStyle(
-                        fontFamily: 'CircularStd',
-                        fontWeight: FontWeight.w400,
-                        color: body,
-                        fontSize: 14,
-                      ),
-                    ),
-                  ],
+              ),
+              SizedBox(width: 10),
+              Text(
+                'Kcal',
+                style: TextStyle(
+                  fontFamily: 'CircularStd',
+                  color: body,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
                 ),
-              );
+              ),
+            ],
+          ),
+          Text(
+            'Dumbbell',
+            style: TextStyle(
+              fontFamily: 'CircularStd',
+              fontWeight: FontWeight.w400,
+              color: body,
+              fontSize: 14,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
@@ -124,14 +120,12 @@ class _HomePageState extends State<HomePage> {
                          color: Color.fromRGBO(255, 228, 232, 1),
                          borderRadius: BorderRadius.circular(15)
                       ),
-                      child: 
-                      Center(
-                        child: 
-                    Text(
-                      'Today, 8 Jul',
-                      style: TextStyle(fontFamily: 'CircularStd', color: blm),
-                    ),
-                    ),
+                      child: Center(
+                        child: Text(
+                          'Today, 8 Jul',
+                          style: TextStyle(fontFamily: 'CircularStd', color: blm),
+                        ),
+                      ),
                     ),
                     SizedBox(width: 20),
                     Text(
@@ -154,7 +148,7 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 30),
               Text(
                 '1 883 Kcal',
-                style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 40),
+                style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 40),
               ),
               Text(
                 'Total Kilocalories',
@@ -208,22 +202,19 @@ class _HomePageState extends State<HomePage> {
               Image.asset('Assets/Images/chart.png'),
               SizedBox(height: 30),
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start, // Change this line
                 children: [
+                  SizedBox(width: 40), // Add padding to move the container to the right
                   buildContainer(),
-                
+                   SizedBox(width: 40), // Add padding to move the container to the right
+                  buildContainer(),
                 ],
               ),
             ],
           ),
         ),
       ),
-      bottomNavigationBar: 
-     
-      
-      
-      
-      Image.asset('Assets/Images/semicircle.png'),
+      bottomNavigationBar: Image.asset('Assets/Images/semicircle.png'),
     );
   }
 }
