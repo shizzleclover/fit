@@ -11,7 +11,7 @@ class ScrollPage2 extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.white,
         onPressed: () {},
-        child: SvgPicture.asset('Assets/Icons/'),
+        child: SvgPicture.asset('assets3/Icons/'),
       ),
       bottomNavigationBar:  BottomAppBar(
       shape: CircularNotchedRectangle(),
@@ -19,19 +19,19 @@ class ScrollPage2 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           IconButton( 
-            icon: SvgPicture.asset('Assets/Icons/'),
+            icon: SvgPicture.asset('assets3/Icons/'),
             onPressed: () {},
             ),
              IconButton( 
-            icon: SvgPicture.asset('Assets/Icons/'),
+            icon: SvgPicture.asset('assets3/Icons/'),
             onPressed: () {},
             ),
              IconButton( 
-            icon: SvgPicture.asset('Assets/Icons/'),
+            icon: SvgPicture.asset('assets3/Icons/'),
             onPressed: () {},
             ),
              IconButton( 
-            icon: SvgPicture.asset('Assets/Icons/'),
+            icon: SvgPicture.asset('assets3/Icons/'),
             onPressed: () {},
             )
         ],

@@ -13,11 +13,11 @@ class Startworkoutscreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: "Start workout",
-        leftIconPath: "Assets/Images/Close.svg",
+        leftIconPath: "assets3/Images/Close.svg",
         onLeftIconTap: () {
           Navigator.of(context).pop();
         },
-        rightIconPath: "Assets/Images/Navigation.svg",
+        rightIconPath: "assets3/Images/Navigation.svg",
         backGround: const Color.fromARGB(255, 255, 207, 214),
       ),
       body: Container(
@@ -47,57 +47,57 @@ class Startworkoutscreen extends StatelessWidget {
                           children: [
                             SizedBox(height: 50),
                             BtsContain(
-                              svgPath1: "Assets/Images/bicep.svg",
+                              svgPath1: "assets3/Images/bicep.svg",
                               txt1: "Biceps",
-                              svgPath2: "Assets/Images/smallarrow.svg",
+                              svgPath2: "assets3/Images/smallarrow.svg",
                             ),
                             SizedBox(height: 15),
                             BtsContain(
-                              svgPath1: "Assets/Images/back.svg",
+                              svgPath1: "assets3/Images/back.svg",
                               txt1: "Body-Back",
-                              svgPath2: "Assets/Images/smallarrow.svg",
+                              svgPath2: "assets3/Images/smallarrow.svg",
                             ),
                             SizedBox(height: 15),
                             BtsContain(
-                              svgPath1: "Assets/Images/butt.svg",
+                              svgPath1: "assets3/Images/butt.svg",
                               txt1: "Body-Butt",
-                              svgPath2: "Assets/Images/smallarrow.svg",
+                              svgPath2: "assets3/Images/smallarrow.svg",
                             ),
                             SizedBox(height: 15),
                             BtsContain(
-                              svgPath1: "Assets/Images/legs.svg",
+                              svgPath1: "assets3/Images/legs.svg",
                               txt1: "Legs and Core",
-                              svgPath2: "Assets/Images/smallarrow.svg",
+                              svgPath2: "assets3/Images/smallarrow.svg",
                             ),
                             SizedBox(height: 15),
                             BtsContain(
-                              svgPath1: "Assets/Images/pec.svg",
+                              svgPath1: "assets3/Images/pec.svg",
                               txt1: "Legs and Core",
-                              svgPath2: "Assets/Images/smallarrow.svg",
+                              svgPath2: "assets3/Images/smallarrow.svg",
                             ),
                             SizedBox(height: 15),
                             BtsContain(
-                              svgPath1: "Assets/Images/core.svg",
+                              svgPath1: "assets3/Images/core.svg",
                               txt1: "Legs and Core",
-                              svgPath2: "Assets/Images/smallarrow.svg",
+                              svgPath2: "assets3/Images/smallarrow.svg",
                             ),
                             SizedBox(height: 15),
                             BtsContain(
-                              svgPath1: "Assets/Images/bench.svg",
+                              svgPath1: "assets3/Images/bench.svg",
                               txt1: "Legs and Core",
-                              svgPath2: "Assets/Images/smallarrow.svg",
+                              svgPath2: "assets3/Images/smallarrow.svg",
                             ),
                             SizedBox(height: 15),
                             BtsContain(
-                              svgPath1: "Assets/Images/loss.svg",
+                              svgPath1: "assets3/Images/loss.svg",
                               txt1: "Legs and Core",
-                              svgPath2: "Assets/Images/smallarrow.svg",
+                              svgPath2: "assets3/Images/smallarrow.svg",
                             ),
                             SizedBox(height: 15),
                             BtsContain(
-                              svgPath1: "Assets/Images/front.svg",
+                              svgPath1: "assets3/Images/front.svg",
                               txt1: "Legs and Core",
-                              svgPath2: "Assets/Images/smallarrow.svg",
+                              svgPath2: "assets3/Images/smallarrow.svg",
                             ),
                             SizedBox(height: 15),
                           ],
@@ -119,7 +119,7 @@ class Startworkoutscreen extends StatelessWidget {
                             builder: (context) => const Bodypackscreen()));
                   },
                   child: Image.asset(
-                    "Assets/Images/Play.png",
+                    "assets3/Images/Play.png",
                     width: 100,
                     height: 100,
                   ),

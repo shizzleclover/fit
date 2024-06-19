@@ -18,8 +18,8 @@ class WorkScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
           title: "Workouts",
-          leftIconPath: "Assets/Images/Arrow.svg",
-          rightIconPath: "Assets/Images/Filter.svg",
+          leftIconPath: "assets3/Images/Arrow.svg",
+          rightIconPath: "assets3/Images/Filter.svg",
           onLeftIconTap: () {
             Navigator.pop(context);
           },
@@ -47,7 +47,7 @@ class WorkScreen extends StatelessWidget {
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SvgPicture.asset("Assets/Images/crown.svg"),
+                        SvgPicture.asset("assets3/Images/crown.svg"),
                         const SizedBox(
                           height: 17,
                         ),
@@ -114,17 +114,17 @@ class WorkScreen extends StatelessWidget {
                 height: 15,
               ),
               const BtsContain(
-                svgPath1: "Assets/Images/bicep.svg",
+                svgPath1: "assets3/Images/bicep.svg",
                 txt1: "Biceps",
-                svgPath2: "Assets/Images/smallarrow.svg",
+                svgPath2: "assets3/Images/smallarrow.svg",
               ),
               const SizedBox(
                 height: 15,
               ),
               BtsContain(
-                  svgPath1: "Assets/Images/back.svg",
+                  svgPath1: "assets3/Images/back.svg",
                   txt1: "Body-Back",
-                  svgPath2: "Assets/Images/smallarrow.svg",
+                  svgPath2: "assets3/Images/smallarrow.svg",
                   ontap: () {
                     Navigator.push(
                         context,
@@ -135,17 +135,17 @@ class WorkScreen extends StatelessWidget {
                 height: 15,
               ),
               const BtsContain(
-                svgPath1: "Assets/Images/butt.svg",
+                svgPath1: "assets3/Images/butt.svg",
                 txt1: "Body-Butt",
-                svgPath2: "Assets/Images/smallarrow.svg",
+                svgPath2: "assets3/Images/smallarrow.svg",
               ),
               const SizedBox(
                 height: 15,
               ),
               const BtsContain(
-                svgPath1: "Assets/Images/legs.svg",
+                svgPath1: "assets3/Images/legs.svg",
                 txt1: "Legs and Core",
-                svgPath2: "Assets/Images/smallarrow.svg",
+                svgPath2: "assets3/Images/smallarrow.svg",
               ),
               const SizedBox(
                 height: 15,

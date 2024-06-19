@@ -12,10 +12,10 @@ class LiveSessionscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        leftIconPath: "Assets/Images/Close.svg",
+        leftIconPath: "assets3/Images/Close.svg",
         onLeftIconTap: () => Navigator.pop(context),
         title: "Live Session",
-        rightIconPath: "Assets/Images/Navigation.svg",
+        rightIconPath: "assets3/Images/Navigation.svg",
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -156,10 +156,10 @@ class LiveSessionscreen extends StatelessWidget {
               const Btscontainer(
                 txt1: "Indoor Run",
                 txt2: "24 min",
-                svgPath1: "Assets/Images/run.svg",
+                svgPath1: "assets3/Images/run.svg",
                 txt3: "5.56km",
                 txt4: "340 kcal",
-                svgPath2: "Assets/Images/calories.svg",
+                svgPath2: "assets3/Images/calories.svg",
                 txtColor: Colors.black,
               ),
               const SizedBox(
@@ -168,10 +168,10 @@ class LiveSessionscreen extends StatelessWidget {
               const Btscontainer(
                 txt1: "Outdoor Cycling",
                 txt2: "24 min",
-                svgPath1: "Assets/Images/cyclist.svg",
+                svgPath1: "assets3/Images/cyclist.svg",
                 txt3: "4.22km",
                 txt4: "348 kcal",
-                svgPath2: "Assets/Images/calories.svg",
+                svgPath2: "assets3/Images/calories.svg",
                 txtColor: Colors.black,
               ),
               const SizedBox(
@@ -180,10 +180,10 @@ class LiveSessionscreen extends StatelessWidget {
               const Btscontainer(
                 txt1: "Threadmill",
                 txt2: "24 min",
-                svgPath1: "Assets/Images/mill.svg",
+                svgPath1: "assets3/Images/mill.svg",
                 txt3: "5.56km",
                 txt4: "348 kcal",
-                svgPath2: "Assets/Images/calories.svg",
+                svgPath2: "assets3/Images/calories.svg",
                 txtColor: Colors.black,
               ),
               const SizedBox(
@@ -200,10 +200,10 @@ class LiveSessionscreen extends StatelessWidget {
 class OverlappingImages extends StatelessWidget {
   OverlappingImages({super.key});
   final List<String> imagePaths = [
-    "Assets/Images/black.png",
-    "Assets/Images/blue.png",
-    "Assets/Images/white.png",
-    "Assets/Images/More.png",
+    "assets3/Images/black.png",
+    "assets3/Images/blue.png",
+    "assets3/Images/white.png",
+    "assets3/Images/More.png",
   ];
 
   @override

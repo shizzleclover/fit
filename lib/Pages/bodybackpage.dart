@@ -10,8 +10,8 @@ class Bodypackscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        leftIconPath: "Assets/Images/Close.svg",
-        rightIconPath: "Assets/Images/Navigation.svg",
+        leftIconPath: "assets3/Images/Close.svg",
+        rightIconPath: "assets3/Images/Navigation.svg",
         onLeftIconTap: () {
           Navigator.of(context).pop();
         },
@@ -33,13 +33,13 @@ class Bodypackscreen extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => StartRandom()));
                 },
-                child: Image.asset("Assets/Images/card2.png"),
+                child: Image.asset("assets3/Images/card2.png"),
               )),
               SizedBox(
                 height: 40,
               ),
               Center(
-                child: Image.asset("Assets/Images/card1.png"),
+                child: Image.asset("assets3/Images/card1.png"),
               ),
             ],
           ),

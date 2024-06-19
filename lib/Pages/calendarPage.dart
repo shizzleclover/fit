@@ -12,12 +12,12 @@ class Calendarpage extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: CustomAppBar(
-        leftIconPath: "Assets/Images/Close.svg",
+        leftIconPath: "assets3/Images/Close.svg",
         onLeftIconTap: () {
           Navigator.pop(context);
         },
         title: "Calendar",
-        rightIconPath: "Assets/Images/Navigation.svg",
+        rightIconPath: "assets3/Images/Navigation.svg",
         backGround: Color.fromARGB(255, 255, 218, 230),
       ),
       body: Container(
@@ -31,7 +31,7 @@ class Calendarpage extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: Image.asset(
-                    "Assets/Images/Calendar.png",
+                    "assets3/Images/Calendar.png",
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -90,10 +90,10 @@ class Calendarpage extends StatelessWidget {
                         Btscontainer(
                           txt1: "Indoor run",
                           txt2: "35 min",
-                          svgPath1: "Assets/Images/run.svg",
+                          svgPath1: "assets3/Images/run.svg",
                           txt3: "7.12km",
                           txt4: "452 kcal",
-                          svgPath2: "Assets/Images/calories.svg",
+                          svgPath2: "assets3/Images/calories.svg",
                           txtColor: Colors.black,
                           onTap: () {
                             Navigator.push(
@@ -108,10 +108,10 @@ class Calendarpage extends StatelessWidget {
                         Btscontainer(
                           txt1: "Outdoor Cycling",
                           txt2: "40 min",
-                          svgPath1: "Assets/Images/cyclist.svg",
+                          svgPath1: "assets3/Images/cyclist.svg",
                           txt3: "4.22km",
                           txt4: "452 kcal",
-                          svgPath2: "Assets/Images/calories.svg",
+                          svgPath2: "assets3/Images/calories.svg",
                           txtColor: Colors.black,
                         ),
                         const SizedBox(

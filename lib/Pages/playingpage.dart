@@ -13,11 +13,11 @@ class PlayingScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: "Playing",
-        leftIconPath: "Assets/Images/Close.svg",
+        leftIconPath: "assets3/Images/Close.svg",
         onLeftIconTap: () {
           Navigator.pop(context);
         },
-        rightIconPath: "Assets/Images/Navigation.svg",
+        rightIconPath: "assets3/Images/Navigation.svg",
         onRightIconTap: () {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => const Activityscreen()));
@@ -33,15 +33,15 @@ class PlayingScreen extends StatelessWidget {
                 alignment: Alignment.center,
                 children: [
                   Image.asset(
-                    "Assets/Images/circle1.png",
+                    "assets3/Images/circle1.png",
                     width: 500,
                   ),
                   Image.asset(
-                    "Assets/Images/circle3.png",
+                    "assets3/Images/circle3.png",
                     width: 240,
                   ),
                   Image.asset(
-                    "Assets/Images/circle2.png",
+                    "assets3/Images/circle2.png",
                     width: 165,
                   ),
                   const Column(
@@ -63,29 +63,29 @@ class PlayingScreen extends StatelessWidget {
               const SizedBox(height: 30),
               Btscontainer(
                 txt1: "Sarah Jay",
-                svgPath1: "Assets/Images/sara.png",
+                svgPath1: "assets3/Images/sara.png",
                 txt2: "8 workouts ",
                 txt4: "460kcal",
-                svgPath2: "Assets/Images/calories.svg",
+                svgPath2: "assets3/Images/calories.svg",
                 backGround: const Color.fromRGBO(255, 112, 134, 1),
               ),
               const SizedBox(height: 30),
               Btscontainer(
                 txt1: "Jessica john",
-                svgPath1: "Assets/Images/jess.png",
+                svgPath1: "assets3/Images/jess.png",
                 txt2: "8 workouts ",
                 txt4: "460kcal",
-                svgPath2: "Assets/Images/calories.svg",
+                svgPath2: "assets3/Images/calories.svg",
                 backGround: Color.fromARGB(255, 0, 0, 0),
                 txtColor: Colors.white,
               ),
               const SizedBox(height: 30),
               Btscontainer(
                 txt1: "Lina Smith",
-                svgPath1: "Assets/Images/lin.png",
+                svgPath1: "assets3/Images/lin.png",
                 txt2: "8 workouts ",
                 txt4: "460kcal",
-                svgPath2: "Assets/Images/calories.svg",
+                svgPath2: "assets3/Images/calories.svg",
                 backGround: const Color.fromRGBO(255, 112, 134, 1),
               ),
             ],

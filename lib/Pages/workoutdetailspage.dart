@@ -10,7 +10,7 @@ class WorkoutdetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        leftIconPath: "Assets/Images/Arrow.svg",
+        leftIconPath: "assets3/Images/Arrow.svg",
         backGround: Color.fromARGB(255, 255, 234, 241),
         onLeftIconTap: () {
           Navigator.of(context).pop();
@@ -26,7 +26,7 @@ class WorkoutdetailScreen extends StatelessWidget {
                 Center(
                   child: ClipOval(
                     child: Image.asset(
-                      "Assets/Images/lift.png",
+                      "assets3/Images/lift.png",
                       width: 200, // Adjust the width as needed
                       height: 200, // Adjust the height for a perfect circle
                       fit: BoxFit
@@ -118,27 +118,27 @@ class WorkoutdetailScreen extends StatelessWidget {
                                 ),
                               ),
                               BtsContain(
-                                svgPath1: "Assets/Images/bicep.svg",
+                                svgPath1: "assets3/Images/bicep.svg",
                                 txt1: "Biceps",
-                                svgPath2: "Assets/Images/smallarrow.svg",
+                                svgPath2: "assets3/Images/smallarrow.svg",
                               ),
                               SizedBox(height: 15),
                               BtsContain(
-                                svgPath1: "Assets/Images/back.svg",
+                                svgPath1: "assets3/Images/back.svg",
                                 txt1: "Body-Back",
-                                svgPath2: "Assets/Images/smallarrow.svg",
+                                svgPath2: "assets3/Images/smallarrow.svg",
                               ),
                               SizedBox(height: 15),
                               BtsContain(
-                                svgPath1: "Assets/Images/butt.svg",
+                                svgPath1: "assets3/Images/butt.svg",
                                 txt1: "Body-Butt",
-                                svgPath2: "Assets/Images/smallarrow.svg",
+                                svgPath2: "assets3/Images/smallarrow.svg",
                               ),
                               SizedBox(height: 15),
                               BtsContain(
-                                svgPath1: "Assets/Images/legs.svg",
+                                svgPath1: "assets3/Images/legs.svg",
                                 txt1: "Legs and Core",
-                                svgPath2: "Assets/Images/smallarrow.svg",
+                                svgPath2: "assets3/Images/smallarrow.svg",
                               ),
                               SizedBox(height: 15),
                             ],
@@ -149,7 +149,7 @@ class WorkoutdetailScreen extends StatelessWidget {
                     Positioned(
                       top: -50, // Adjust the top value to control the overlap
                       child: Image.asset(
-                        "Assets/Images/Play.png",
+                        "assets3/Images/Play.png",
                         width: 100,
                         height: 100,
                       ),

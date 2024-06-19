@@ -15,13 +15,13 @@ class DiscoverScreen extends StatelessWidget {
           title: "Discover",
           onTitleTap: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const Calendarpage()));
+                MaterialPageRoute(builder: (context) =>  Calendarpage()));
           },
-          leftIconPath: "Assets/Images/Close.svg",
+          leftIconPath: "assets3/Images/Close.svg",
           onLeftIconTap: () {
             Navigator.pop(context);
           },
-          rightIconPath: "Assets/Images/Navigation.svg"),
+          rightIconPath: "assets3/Images/Navigation.svg"),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(left: 10, right: 10, top: 20),
@@ -31,7 +31,7 @@ class DiscoverScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: Image.asset(
-                  "Assets/Images/girlblack.png",
+                  "assets3/Images/girlblack.png",
                   fit: BoxFit.cover,
                 ),
               ),
@@ -71,10 +71,10 @@ class DiscoverScreen extends StatelessWidget {
               const Btscontainer(
                 txt1: "Indoor run",
                 txt2: "35 min",
-                svgPath1: "Assets/Images/run.svg",
+                svgPath1: "assets3/Images/run.svg",
                 txt3: "7.12km",
                 txt4: "452 kcal",
-                svgPath2: "Assets/Images/calories.svg",
+                svgPath2: "assets3/Images/calories.svg",
                 txtColor: Colors.black,
               ),
               const SizedBox(
@@ -83,10 +83,10 @@ class DiscoverScreen extends StatelessWidget {
               const Btscontainer(
                 txt1: "Outdoor Cycling",
                 txt2: "40 min",
-                svgPath1: "Assets/Images/cycling.svg",
+                svgPath1: "assets3/Images/cycling.svg",
                 txt3: "4.22km",
                 txt4: "452 kcal",
-                svgPath2: "Assets/Images/calories.svg",
+                svgPath2: "assets3/Images/calories.svg",
                 txtColor: Colors.black,
               ),
               const SizedBox(
@@ -103,10 +103,10 @@ class DiscoverScreen extends StatelessWidget {
 class OverlappingImages extends StatelessWidget {
   OverlappingImages({super.key});
   final List<String> imagePaths = [
-    "Assets/Images/More.png",
-    "Assets/Images/black.png",
-    "Assets/Images/blue.png",
-    "Assets/Images/white.png",
+    "assets3/Images/More.png",
+    "assets3/Images/black.png",
+    "assets3/Images/blue.png",
+    "assets3/Images/white.png",
   ];
 
   @override

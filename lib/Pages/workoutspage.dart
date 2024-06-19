@@ -22,8 +22,8 @@ class _WorkoutScreenState extends State<WorkoutScreen> {
     return Scaffold(
       appBar: CustomAppBar(
         title: "Workout",
-        leftIconPath: "Assets/Images/Close.svg",
-        rightIconPath: "Assets/Images/Navigation.svg",
+        leftIconPath: "assets3/Images/Close.svg",
+        rightIconPath: "assets3/Images/Navigation.svg",
         onLeftIconTap: () {
           Navigator.of(context).pop(); // Navigate back
         },
@@ -39,7 +39,7 @@ class _WorkoutScreenState extends State<WorkoutScreen> {
           child: Column(
             children: [
               const ContainerGirl(
-                rightSideImage: "Assets/Images/girl.png",
+                rightSideImage: "assets3/Images/girl.png",
                 txt1: "Flat 50% \n Discount",
                 txt2: "Shape your \n body with \n pump house",
                 borderRadius: 10,

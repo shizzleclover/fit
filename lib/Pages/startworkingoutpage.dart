@@ -11,9 +11,9 @@ class Startworkingoutpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        leftIconPath: "Assets/Images/Close.svg",
+        leftIconPath: "assets3/Images/Close.svg",
         title: "Start Workout",
-        rightIconPath: "Assets/Images/Navigation.svg",
+        rightIconPath: "assets3/Images/Navigation.svg",
         onLeftIconTap: () {
           Navigator.of(context).pop();
         },
@@ -40,7 +40,7 @@ class Startworkingoutpage extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                    SvgPicture.asset("Assets/Images/option.svg"),
+                    SvgPicture.asset("assets3/Images/option.svg"),
                   ],
                 ),
                 const SizedBox(height: 20), // Add some space between elements
@@ -51,7 +51,7 @@ class Startworkingoutpage extends StatelessWidget {
                     itemBuilder: (context, index) {
                       if (index == 0) {
                         return BtsImage(
-                          imagePath: "Assets/Images/blacklift.png",
+                          imagePath: "assets3/Images/blacklift.png",
                           txt1: "Full-Body workout",
                           txt2: "Shift stubborn fat \n and build muscle",
                           onClick: () {
@@ -64,7 +64,7 @@ class Startworkingoutpage extends StatelessWidget {
                         );
                       } else {
                         return const BtsImage(
-                          imagePath: "Assets/Images/pinklift.png",
+                          imagePath: "assets3/Images/pinklift.png",
                           txt1: "Small-waist workout",
                           txt2: "Getting a smaller waist \n but with focus",
                         );
@@ -128,7 +128,7 @@ class Startworkingoutpage extends StatelessWidget {
                           //1
                           Column(
                             children: [
-                              SvgPicture.asset("Assets/Images/special.svg"),
+                              SvgPicture.asset("assets3/Images/special.svg"),
                               SizedBox(
                                 height: 10,
                               ),
@@ -148,7 +148,7 @@ class Startworkingoutpage extends StatelessWidget {
                             children: [
                               Stack(
                                 children: [
-                                  SvgPicture.asset("Assets/Images/special.svg"),
+                                  SvgPicture.asset("assets3/Images/special.svg"),
                                 ],
                               ),
                               SizedBox(
@@ -167,7 +167,7 @@ class Startworkingoutpage extends StatelessWidget {
                           //3
                           Column(
                             children: [
-                              SvgPicture.asset("Assets/Images/special.svg"),
+                              SvgPicture.asset("assets3/Images/special.svg"),
                               SizedBox(
                                 height: 10,
                               ),
@@ -184,7 +184,7 @@ class Startworkingoutpage extends StatelessWidget {
                           //4
                           Column(
                             children: [
-                              SvgPicture.asset("Assets/Images/special.svg"),
+                              SvgPicture.asset("assets3/Images/special.svg"),
                               SizedBox(
                                 height: 10,
                               ),
@@ -238,7 +238,7 @@ class BtsImage extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
                     child: Image.asset(
-                      imagePath ?? "Assets/Images/pinklift.png",
+                      imagePath ?? "assets3/Images/pinklift.png",
                       fit: BoxFit.cover,
                       width: 180,
                     ),

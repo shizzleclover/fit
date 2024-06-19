@@ -11,7 +11,7 @@ class StartRandom extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        leftIconPath: "Assets/Images/Arrow.svg",
+        leftIconPath: "assets3/Images/Arrow.svg",
         onLeftIconTap: () {
           Navigator.pop(context);
         },
@@ -30,7 +30,7 @@ class StartRandom extends StatelessWidget {
                   // Wrap ClipOval with Center to ensure it stays centered
                   child: ClipOval(
                     child: Image.asset(
-                      "Assets/Images/threadmill.png",
+                      "assets3/Images/threadmill.png",
                       width: 200, // Adjust the width as needed
                       height:
                           200, // Adjust the height to match the width for a perfect circle
@@ -182,10 +182,10 @@ class StartRandom extends StatelessWidget {
 class OverlappingImages extends StatelessWidget {
   OverlappingImages({super.key});
   final List<String> imagePaths = [
-    "Assets/Images/More.png",
-    "Assets/Images/black.png",
-    "Assets/Images/blue.png",
-    "Assets/Images/white.png",
+    "assets3/Images/More.png",
+    "assets3/Images/black.png",
+    "assets3/Images/blue.png",
+    "assets3/Images/white.png",
   ];
 
   @override

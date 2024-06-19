@@ -9,10 +9,10 @@ class NotificationsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        leftIconPath: "assets3/Images/Close.svg",
+        leftIconPath: "assets33/Images/Close.svg",
         onLeftIconTap: () => Navigator.pop(context),
         title: "Notifications",
-        rightIconPath: "assets3/Images/Navigation.svg",
+        rightIconPath: "assets33/Images/Navigation.svg",
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -33,7 +33,7 @@ class NotificationsScreen extends StatelessWidget {
               Btscontainer(
                 txt1: "Catfit",
                 txt2: "Your duel with Alex starts today. Be \n well prepared",
-                svgPath1: "assets3/Images/Ca.png",
+                svgPath1: "assets33/Images/Ca.png",
                 txt3: "02:01 PM",
               ),
               Divider(
@@ -43,7 +43,7 @@ class NotificationsScreen extends StatelessWidget {
               Btscontainer(
                 txt1: "Alina Jen",
                 txt2: "Started following you!",
-                svgPath1: "assets3/Images/Al.png",
+                svgPath1: "assets33/Images/Al.png",
                 txt3: "10:32 AM",
               ),
               Divider(
@@ -68,7 +68,7 @@ class NotificationsScreen extends StatelessWidget {
               Btscontainer(
                 txt1: "Monica Kim",
                 txt2: "Started following you!",
-                svgPath1: "assets3/Images/Mo.png",
+                svgPath1: "assets33/Images/Mo.png",
                 txt3: "02:01 PM",
               ),
               Divider(
@@ -78,7 +78,7 @@ class NotificationsScreen extends StatelessWidget {
               Btscontainer(
                 txt1: "Catfit",
                 txt2: "Started following you!",
-                svgPath1: "assets3/Images/Ca.png",
+                svgPath1: "assets33/Images/Ca.png",
                 txt3: "10:32 AM",
               ),
               Divider(

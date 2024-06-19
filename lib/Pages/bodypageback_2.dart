@@ -12,8 +12,8 @@ class BodyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        leftIconPath: "Assets/Images/Arrow.svg",
-        rightIconPath: "Assets/Images/Navigation.svg",
+        leftIconPath: "assets3/Images/Arrow.svg",
+        rightIconPath: "assets3/Images/Navigation.svg",
         title: "Body-Back",
         onLeftIconTap: () {
           Navigator.of(context).pop();
@@ -33,7 +33,7 @@ class BodyScreen extends StatelessWidget {
                     Center(
                       child: ClipOval(
                         child: Image.asset(
-                          "Assets/Images/last.png",
+                          "assets3/Images/last.png",
                           width: 200, // Adjust the width as needed
                           height: 200, // Adjust the height for a perfect circle
                           fit: BoxFit
@@ -59,19 +59,19 @@ class BodyScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 InfoCard(
-                                  svgPath: "Assets/Images/heart.svg",
+                                  svgPath: "assets3/Images/heart.svg",
                                   mainText: "246kcal",
                                   subText: "Last 7 days",
                                   textColor: Colors.black,
                                 ),
                                 InfoCard(
-                                  svgPath: "Assets/Images/drop.svg",
+                                  svgPath: "assets3/Images/drop.svg",
                                   mainText: "84kcal",
                                   subText: "All time",
                                   textColor: Colors.black,
                                 ),
                                 InfoCard(
-                                  svgPath: "Assets/Images/shock.svg",
+                                  svgPath: "assets3/Images/shock.svg",
                                   mainText: "72kcal",
                                   subText: "Average",
                                   textColor: Colors.black,
@@ -93,7 +93,7 @@ class BodyScreen extends StatelessWidget {
                                     color: Colors.black,
                                   ),
                                 ),
-                                SvgPicture.asset("Assets/Images/option.svg"),
+                                SvgPicture.asset("assets3/Images/option.svg"),
                               ],
                             ),
                             const SizedBox(
@@ -136,7 +136,7 @@ class BodyScreen extends StatelessWidget {
                               builder: (context) => const Bodypackscreen()));
                     },
                     child: Image.asset(
-                      "Assets/Images/Play.png",
+                      "assets3/Images/Play.png",
                       width: 100,
                       height: 100,
                     ),
