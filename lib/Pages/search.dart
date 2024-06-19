@@ -29,7 +29,7 @@ class SearchPage extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Text('Search', style: TextStyle(color: Colors.black)),
         leading: IconButton(
-          icon: Image.asset('assets/arrow.png', height: 60),
+          icon: Image.asset('assets2/arrow.png', height: 60),
           onPressed: () {
             Navigator.push(
               context,
@@ -39,7 +39,7 @@ class SearchPage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: Image.asset('assets/more.png', height: 60),
+            icon: Image.asset('assets2/more.png', height: 60),
             onPressed: () {
               Navigator.push(
                 context,
@@ -90,8 +90,8 @@ class PostListView extends StatelessWidget {
           username: 'Linh Nguyen',
           timestamp: '2s ago',
           content: 'I am very happy to be with Cafit in training sessions and how about you?',
-          profilePicPath: 'assets/linh.png',
-          postImagePath: 'assets/gear.png',
+          profilePicPath: 'assets2/linh.png',
+          postImagePath: 'assets2/gear.png',
           likes: 121,
           comments: 34,
         ),
@@ -99,8 +99,8 @@ class PostListView extends StatelessWidget {
           username: 'Ivan Morais',
           timestamp: '5 mins ago',
           content: 'Sample post content for Ivan Morais',
-          profilePicPath: 'assets/ivan.png',
-          postImagePath: 'assets/gear.png',
+          profilePicPath: 'assets2/ivan.png',
+          postImagePath: 'assets2/gear.png',
           likes: 50,
           comments: 10,
         ),
@@ -177,19 +177,19 @@ class PostActions extends StatelessWidget {
       children: [
         Row(
           children: [
-            Image.asset('assets/heart.png', height: 30),
+            Image.asset('assets2/heart.png', height: 30),
             SizedBox(width:5),
             Text(likes.toString()),
           ],
         ),
         Row(
           children: [
-            Image.asset('assets/chat.png', height: 30),
+            Image.asset('assets2/chat.png', height: 30),
             SizedBox(width:5),
             Text(comments.toString()),
           ],
         ),
-        Image.asset('assets/share.png', height: 30),
+        Image.asset('assets2/share.png', height: 30),
       ],
     );
   }
@@ -205,9 +205,9 @@ class CustomBottomNavigationBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Image.asset('assets/home.png', height: 30),
-            Image.asset('assets/location.png', height: 30),
-            Image.asset('assets/play.png', height: 60),
+            Image.asset('assets2/home.png', height: 30),
+            Image.asset('assets2/location.png', height: 30),
+            Image.asset('assets2/play.png', height: 60),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -223,7 +223,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
               ],
             ),
             IconButton(
-            icon: Image.asset('assets/award.png', height: 30),
+            icon: Image.asset('assets2/award.png', height: 30),
             onPressed: () {
               Navigator.push(
                 context,

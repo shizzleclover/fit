@@ -103,7 +103,11 @@ class _MessagePageState extends State<MessagePage> {
                       color: conta,
                       borderRadius: BorderRadius.circular(100),
                     ),
-                    child: SvgPicture.asset('Assets/Icons/'),
+                    child: SvgPicture.asset('Assets/Icons/abb.svg',
+                    height: 10,
+                    width: 10,
+                   
+                    ),
                   ),
                   SizedBox(width: 30),
                    
@@ -136,12 +140,14 @@ Row(
           Column(
             crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
             children: [
-              Text('Tillie Larson'),
-              SizedBox(height: 10),
-              Text('This afternoon at 5:30PM'),
+              Text('Tillie Larson',  style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 15, fontWeight: FontWeight.w700),
+),
+              SizedBox(height: 8),
+              Text('This afternoon at 5:30PM',style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 12, fontWeight: FontWeight.w200),
+),
             ],
           ),
-          SizedBox(width: 30),
+          SizedBox(width: 60),
           Text('1 min'),
         ],
       ),
@@ -151,89 +157,125 @@ Row(
 SizedBox(height: 30,),
 Row(
   children: [
-    Image.asset('Assets/Images/roun.png'),
-    SizedBox(width: 40,),
-    Column(
-      crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
-      children: [
-        Text('Lovely friends 😍'),
-        SizedBox(height: 10,),
-        Text('I hope you are well.'),
-      ],
-    ),
-    SizedBox(width: 30,),
-    Text('2s ago')
-  ],
+    GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ChatScreen()),
+        );
+      },
+      child: Row(
+        children: [
+          Image.asset('Assets/Images/roun2.png'),
+          SizedBox(width: 40),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+            children: [
+              Text('Tillie Larson',  style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 15, fontWeight: FontWeight.w700),
 ),
-SizedBox(height: 30,),
-Row(
-  children: [
-    Image.asset('Assets/Images/roun.png'),
-    SizedBox(width: 40,),
-    Column(
-      crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
-      children: [
-        Text('Tillie Larson'),
-        SizedBox(height: 10,),
-        Text('I hope you are well.'),
-      ],
-    ),
-    SizedBox(width: 30,),
-    Text('2s ago')
-  ],
-),
-SizedBox(height: 30,),
-Row(
-  children: [
-    Image.asset('Assets/Images/roun.png'),
-    SizedBox(width: 40,),
-    Column(
-      crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
-      children: [
-        Text('Tillie Larson'),
-        SizedBox(height: 10,),
-        Text('I hope you are well.'),
-      ],
-    ),
-    SizedBox(width: 30,),
-    Text('2s ago')
-  ],
-),
-SizedBox(height: 30,),
-Row(
-  children: [
-    Image.asset('Assets/Images/roun.png'),
-    SizedBox(width: 40,),
-    Column(
-      crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
-      children: [
-        Text('Tillie Larson'),
-        SizedBox(height: 10,),
-        Text('I hope you are well.'),
-      ],
-    ),
-    SizedBox(width: 30,),
-    Text('2s ago')
-  ],
-),
-SizedBox(height: 30,),
-Row(
-  children: [
-    Image.asset('Assets/Images/roun.png'),
-    SizedBox(width: 40,),
-    Column(
-      crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
-      children: [
-        Text('Tillie Larson'),
-        SizedBox(height: 10,),
-        Text('I hope you are well.'),
-      ],
-    ),
-    SizedBox(width: 30,),
-    Text('2s ago')
-  ],
+              SizedBox(height: 8),
+              Text('This afternoon at 5:30PM',style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 12, fontWeight: FontWeight.w200),
 ),
             ],
+          ),
+          SizedBox(width: 60),
+          Text('1 min'),
+        ],
+      ),
+    ),
+  ],
+),SizedBox(height: 30,),
+Row(
+  children: [
+    GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ChatScreen()),
+        );
+      },
+      child: Row(
+        children: [
+          Image.asset('Assets/Images/roun.png'),
+          SizedBox(width: 40),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+            children: [
+              Text('Tillie Larson',  style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 15, fontWeight: FontWeight.w700),
+),
+              SizedBox(height: 8),
+              Text('This afternoon at 5:30PM',style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 12, fontWeight: FontWeight.w200),
+),
+            ],
+          ),
+          SizedBox(width: 60),
+          Text('1 min'),
+        ],
+      ),
+    ),
+  ],
+),SizedBox(height: 30,),
+Row(
+  children: [
+    GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ChatScreen()),
+        );
+      },
+      child: Row(
+        children: [
+          Image.asset('Assets/Images/roun.png'),
+          SizedBox(width: 40),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+            children: [
+              Text('Tillie Larson',  style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 15, fontWeight: FontWeight.w700),
+),
+              SizedBox(height: 8),
+              Text('This afternoon at 5:30PM',style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 12, fontWeight: FontWeight.w200),
+),
+            ],
+          ),
+          SizedBox(width: 60),
+          Text('1 min'),
+        ],
+      ),
+    ),
+  ],
+),       
+SizedBox(height: 30,),
+Row(
+  children: [
+    GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ChatScreen()),
+        );
+      },
+      child: Row(
+        children: [
+          Image.asset('Assets/Images/roun.png'),
+          SizedBox(width: 40),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+            children: [
+              Text('Tillie Larson',  style: TextStyle(fontFamily: 'CircularStd', color: blm, fontSize: 15, fontWeight: FontWeight.w700),
+),
+              SizedBox(height: 8),
+              Text('This afternoon at 5:30PM',style: TextStyle(fontFamily: 'CircularStd', color: txt, fontSize: 12, fontWeight: FontWeight.w200),
+),
+            ],
+          ),
+          SizedBox(width: 60),
+          Text('1 min'),
+        ],
+      ),
+    ),
+  ],
+),     ],
        ),
       ),
       ),

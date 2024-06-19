@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  custom_sliding_segmented_control: ^1.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -145,8 +146,85 @@ flutter:
     - assets2/back_pink.png
     - assets2/chat.png
     - assets2/heart.png
-    
 
+
+
+
+    
+    - assets3/Images/Oval.png
+    - assets3/Images/Oval2.png
+    - assets3/Images/girl.png
+    - assets3/Images/cont.png
+    - assets3/Images/Path.png
+    - assets3/Images/PathP.png
+    - assets3/Images/Path2.png
+    - assets3/Images/Path3.png
+    - assets3/Images/Path4.png
+    - assets3/Images/Path5.png
+    - assets3/Images/Path6.png
+    - assets3/Images/Path7.png
+    - assets3/Images/Navigation.svg
+    - assets3/Images/Arrow.svg
+    - assets3/Images/friends.svg
+    - assets3/Images/girl.png
+    - assets3/Images/guy.png
+    - assets3/Images/Line.png
+    - assets3/Images/threadmill.png
+    - assets3/Images/girlblack.png
+    - assets3/Images/Facebook.svg
+    - assets3/Images/Group.svg
+    - assets3/Images/girlpink.jpg
+    - assets3/Images/black.png
+    - assets3/Images/blue.png
+    - assets3/Images/white.png
+    - assets3/Images/More.png
+    - assets3/Images/Play.png
+    - assets3/Images/run.svg
+    - assets3/Images/calories.svg
+    - assets3/Images/cycling.svg
+    - assets3/Images/Filter.svg
+    - assets3/Images/Close.svg
+    - assets3/Images/crown.svg
+    - assets3/Images/cyclist.svg
+    - assets3/Images/mill.svg
+    - assets3/Images/smallarrow.svg
+    - assets3/Images/bicep.svg
+    - assets3/Images/butt.svg
+    - assets3/Images/back.svg
+    - assets3/Images/legs.svg
+    - assets3/Images/bench.svg
+    - assets3/Images/core.svg
+    - assets3/Images/pec.svg
+    - assets3/Images/loss.svg
+    - assets3/Images/front.svg
+    - assets3/Images/heart.svg
+    - assets3/Images/drop.svg
+    - assets3/Images/shock.svg
+    - assets3/Images/option.svg
+    - assets3/Images/special.svg
+    - assets3/Images/star.png
+    - assets3/Images/beach.png
+    - assets3/Images/trophy.png
+    - assets3/Images/badge.png
+    - assets3/Images/circle1.png
+    - assets3/Images/circle2.png
+    - assets3/Images/circle3.png
+    - assets3/Images/circle3.png
+    - assets3/Images/Calendar.png
+    - assets3/Images/Mo.png
+    - assets3/Images/Ca.png
+    - assets3/Images/Al.png
+    - assets3/Images/sara.png
+    - assets3/Images/jess.png
+    - assets3/Images/lin.png
+    - assets3/Images/card1.png
+    - assets3/Images/card2.png
+    - assets3/Images/Map.png
+    - assets3/Images/last.png
+    - assets3/Images/lift.png
+    - assets3/Images/pinklift.png
+    - assets3/Images/blacklift.png
+    - assets3/Images/complete.jpg
 
 
     - Assets/Icons/avat.svg
@@ -183,6 +261,7 @@ flutter:
     - Assets/Icons/star.svg
     - Assets/Icons/Dot.svg
     - Assets/Icons/trophy.svg
+    - Assets/Icons/abb.svg
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,3 +1,6 @@
+import 'package:fitapp/Pages/Scroll.dart';
+import 'package:fitapp/Pages/mappage.dart';
+
 import 'reward_details.dart';
 import 'package:flutter/material.dart';
 import 'search.dart';
@@ -268,8 +271,26 @@ class RewardPage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Image.asset('assets2/home.png', height: 30),
-              Image.asset('assets2/location.png', height: 30),
+              IconButton( 
+
+              icon:   Image.asset('assets2/home.png', height: 30),
+            onPressed: (){
+                   Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ScrollPage()),
+                    );
+            },
+              ),
+           
+              IconButton(
+                icon:  Image.asset('assets2/location.png', height: 30),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MapPage()),
+                  );
+                },
+              ),
               Image.asset('assets2/play.png', height: 60),
               IconButton(
                 icon: Image.asset('assets2/hearticon.png', height: 30),

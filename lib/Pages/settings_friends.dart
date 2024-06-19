@@ -1,3 +1,4 @@
+import 'package:fitapp/Pages/friendspage.dart';
 import 'package:flutter/material.dart';
 
 import 'profile_edit.dart';
@@ -69,7 +70,13 @@ class _CloseFriendsScreenState extends State<CloseFriendsScreen> {
         actions: [
           IconButton(
             icon: Image.asset('assets2/friends.png'),
-            onPressed: () {},
+            onPressed: () {
+
+                   Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Friendspage()),
+                    );
+            },
           ),
         ],
       ),

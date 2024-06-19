@@ -86,7 +86,7 @@ class ActivitySection extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Image.asset('assets22/cycling.png', height: 60),
+          Image.asset('assets2/cycling.png', height: 60),
           SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -108,7 +108,7 @@ class ActivitySection extends StatelessWidget {
           Spacer(),
           Row(
             children: [
-              Image.asset('assets22/streak.png', height: 30),
+              Image.asset('assets2/streak.png', height: 30),
               SizedBox(width: 5),
               Text(
                 '1282 Kcal',
@@ -182,14 +182,14 @@ class SenderBubble extends StatelessWidget {
           height: 180, // Set a height for the map
           width: 300, // Make the container take the full width of the column
           child: Image.asset(
-            'assets22/map.png',
+            'assets2/map.png',
             fit: BoxFit.cover,
           ),
         ),
         Row(
           children: [
             CircleAvatar(
-              backgroundImage: AssetImage('assets22/tillie.png'),
+              backgroundImage: AssetImage('assets2/tillie.png'),
               radius: 30,
             ),
             SizedBox(width: 10),

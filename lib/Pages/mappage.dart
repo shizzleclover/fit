@@ -1,3 +1,5 @@
+import 'package:fitapp/Pages/messages.dart';
+import 'package:fitapp/Pages/reward.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -63,7 +65,12 @@ class MapPage extends StatelessWidget {
                 icon: SvgPicture.asset('Assets/Icons/heart.svg'),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                       Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RewardPage()),
+                    );
+                },
                 icon: SvgPicture.asset('Assets/Icons/medal.svg'),
               ),
             ],
