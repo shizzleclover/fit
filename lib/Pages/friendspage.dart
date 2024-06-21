@@ -72,8 +72,8 @@ class Friendspage extends StatelessWidget {
                       ),
                       child: Image.asset(
                         'assets3/Images/complete.jpg',
-                        width: 400,
-                        height: 300, // Set the width of the girl image
+                        width: 500,
+                        height: 350, // Set the width of the girl image
                       ),
                     ),
                   )
