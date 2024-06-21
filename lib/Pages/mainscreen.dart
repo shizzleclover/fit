@@ -62,27 +62,36 @@ class MainScreen extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                SizedBox(height: 40),
-                AppButton(
-                  backgroundColor: path,
-                  text: 'Next',
-                  width: 266,
-                  height: 63,
-                  textColor: def,
-                  fsize: 17,
-                  ffamily: 'Poppins',
-                  fweight: '600',
-                  
-                  radius: 20,
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => HomePage()),
-                    );
-                  },
-                  border: path, 
-                  fontWeight: FontWeight.w700, icon: 'null',
-                ),
+                SizedBox(height: 30),
+               GestureDetector(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => HomePage()),
+    );
+  },
+  child: Container(
+    width: 266,
+    height: 63,
+    decoration: BoxDecoration(
+      color: path,  
+      borderRadius: BorderRadius.circular(20),
+      border: Border.all(color: path),  
+    ),
+    child: Center(
+      child: Text(
+        'Next',
+        style: TextStyle(
+          color: def, 
+          fontSize: 17,
+          fontFamily: 'Poppins',
+          fontWeight: FontWeight.w700,  
+        ),
+      ),
+    ),
+  ),
+),
+
                 SizedBox(height: 300), 
               ],
             ),
