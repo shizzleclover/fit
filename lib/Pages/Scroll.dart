@@ -90,20 +90,27 @@ class _ScrollPageState extends State<ScrollPage> {
                 ],
               ),
               SizedBox(height: 30),
-              Text(
-                '1 883 Kcal',
-                style: TextStyle(
-                  fontFamily: 'CircularStd',
-                  color: blm,
-                  fontSize: 50,
-                ),
-              ),
-              Text(
-                'Total Kilocalories',
-                style: TextStyle(
-                  fontFamily: 'CircularStd',
-                  color: txt,
-                  fontSize: 20,
+              Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      '1 883 Kcal',
+                      style: TextStyle(
+                        fontFamily: 'CircularStd',
+                        color: blm,
+                        fontSize: 50,
+                      ),
+                    ),
+                    Text(
+                      'Total Kilocalories',
+                      style: TextStyle(
+                        fontFamily: 'CircularStd',
+                        color: txt,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(height: 30),
@@ -171,155 +178,161 @@ class _ScrollPageState extends State<ScrollPage> {
               SizedBox(height: 40),
               Image.asset('Assets/Images/chart.png', width: screenWidth * 0.8),
               SizedBox(height: 30),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+              ListView(
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
                 children: [
-                  SizedBox(width: 20), // Adjust this value as needed
-                  Container(
-                    width: 120,
-                    height: 120,
-                    decoration: BoxDecoration(
-                      color: conta,
-                      borderRadius: BorderRadius.circular(28),
-                    ),
-                    padding: EdgeInsets.all(20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SvgPicture.asset('Assets/Icons/dumb.svg'),
-                        SizedBox(height: 10),
-                        Row(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Container(
+                        width: 120,
+                        height: 120,
+                        decoration: BoxDecoration(
+                          color: conta,
+                          borderRadius: BorderRadius.circular(28),
+                        ),
+                        padding: EdgeInsets.all(20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              '628',
-                              style: TextStyle(
-                                fontFamily: 'CircularStd',
-                                color: body,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
+                            SvgPicture.asset('Assets/Icons/dumb.svg'),
+                            SizedBox(height: 10),
+                            Row(
+                              children: [
+                                Text(
+                                  '628',
+                                  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    color: body,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(width: 4),
+                                Text(
+                                  'Kcal',
+                                  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    color: body,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
                             ),
-                            SizedBox(width: 4), // Adjust the spacing here
                             Text(
-                              'Kcal',
+                              'Dumbbell',
                               style: TextStyle(
                                 fontFamily: 'CircularStd',
+                                fontWeight: FontWeight.w400,
                                 color: body,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
                               ),
                             ),
                           ],
                         ),
-                        Text(
-                          'Dumbbell',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            fontWeight: FontWeight.w400,
-                            color: body,
-                            fontSize: 14,
-                          ),
+                      ),
+                      SizedBox(width: 16),
+                      Container(
+                        width: 120,
+                        height: 120,
+                        decoration: BoxDecoration(
+                          color: conta,
+                          borderRadius: BorderRadius.circular(28),
                         ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 16),
-                  Container(
-                    width: 120,
-                    height: 120,
-                    decoration: BoxDecoration(
-                      color: conta,
-                      borderRadius: BorderRadius.circular(28),
-                    ),
-                    padding: EdgeInsets.all(20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SvgPicture.asset('Assets/Icons/dumb.svg'),
-                        SizedBox(height: 10),
-                        Row(
+                        padding: EdgeInsets.all(20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              '628',
-                              style: TextStyle(
-                                fontFamily: 'CircularStd',
-                                color: body,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
+                            SvgPicture.asset('Assets/Icons/dumb.svg'),
+                            SizedBox(height: 10),
+                            Row(
+                              children: [
+                                Text(
+                                  '628',
+                                  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    color: body,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(width: 4),
+                                Text(
+                                  'Kcal',
+                                  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    color: body,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
                             ),
-                            SizedBox(width: 4), // Adjust the spacing here
                             Text(
-                              'Kcal',
+                              'Dumbbell',
                               style: TextStyle(
                                 fontFamily: 'CircularStd',
+                                fontWeight: FontWeight.w400,
                                 color: body,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
                               ),
                             ),
                           ],
                         ),
-                        Text(
-                          'Dumbbell',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            fontWeight: FontWeight.w400,
-                            color: body,
-                            fontSize: 14,
-                          ),
+                      ),
+                      SizedBox(width: 16),
+                      Container(
+                        width: 120,
+                        height: 120,
+                        decoration: BoxDecoration(
+                          color: conta,
+                          borderRadius: BorderRadius.circular(28),
                         ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 16),
-                  Container(
-                    width: 120,
-                    height: 120,
-                    decoration: BoxDecoration(
-                      color: conta,
-                      borderRadius: BorderRadius.circular(28),
-                    ),
-                    padding: EdgeInsets.all(20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SvgPicture.asset('Assets/Icons/dumb.svg'),
-                        SizedBox(height: 10),
-                        Row(
+                        padding: EdgeInsets.all(20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              '628',
-                              style: TextStyle(
-                                fontFamily: 'CircularStd',
-                                color: body,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
+                            SvgPicture.asset('Assets/Icons/dumb.svg'),
+                            SizedBox(height: 10),
+                            Row(
+                              children: [
+                                Text(
+                                  '628',
+                                  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    color: body,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(width: 4),
+                                Text(
+                                  'Kcal',
+                                  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    color: body,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
                             ),
-                            SizedBox(width: 4), // Adjust the spacing here
                             Text(
-                              'Kcal',
+                              'Dumbbell',
                               style: TextStyle(
                                 fontFamily: 'CircularStd',
+                                fontWeight: FontWeight.w400,
                                 color: body,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
                               ),
                             ),
                           ],
                         ),
-                        Text(
-                          'Dumbbell',
-                          style: TextStyle(
-                            fontFamily: 'CircularStd',
-                            fontWeight: FontWeight.w400,
-                            color: body,
-                            fontSize: 14,
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -623,7 +636,7 @@ class _ScrollPageState extends State<ScrollPage> {
                                 SvgPicture.asset('Assets/Icons/flame.svg'),
                               ],
                             ),
-                            SizedBox(height: 8), // Adjust the spacing as needed
+                            SizedBox(height: 8),
                             Column(
                               children: [
                                 Text(
@@ -634,14 +647,14 @@ class _ScrollPageState extends State<ScrollPage> {
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
-                                SizedBox(height: 4), // Adjust the spacing between '620.68' and 'Kcal'
+                                SizedBox(height: 4),
                                 Text(
                                   'Kcal',
                                   style: TextStyle(
                                     fontFamily: 'CircularStd',
                                     fontWeight: FontWeight.w500,
                                     fontSize: 15,
-                                    color: txt
+                                    color: txt,
                                   ),
                                 ),
                               ],
@@ -650,41 +663,66 @@ class _ScrollPageState extends State<ScrollPage> {
                         ),
                       ),
                       SizedBox(height: 20),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => SpeedPage()),
-                          );
-                        },
-                        child: Container(
-                          width: 158,
-                          height: 118,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(color: bord, width: 2),
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          padding: EdgeInsets.all(16),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    'Steps',
-                                    style: TextStyle(),
+                     GestureDetector(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SpeedPage()),
+    );
+  },
+  child: Container(
+    width: 158,
+    height: 118,
+    decoration: BoxDecoration(
+      color: Colors.white,
+      border: Border.all(color: bord, width: 2),
+      borderRadius: BorderRadius.circular(20),
+    ),
+     padding: EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'Steps',
+                                  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontWeight: FontWeight.w500,
                                   ),
-                                  Spacer(),
-                                  SvgPicture.asset('Assets/Icons/shoe.svg'),
-                                ],
-                              ),
-                              Spacer(),
-                              Text('620.68', style: TextStyle()),
-                              Text('Kcal', style: TextStyle()),
-                            ],
-                          ),
-                        ),
-                      ),
+                                ),
+                                Spacer(),
+                                SvgPicture.asset('Assets/Icons/flame.svg'),
+                              ],
+                            ),
+                            SizedBox(height: 8),
+                            Column(
+                              children: [
+                                Text(
+                                  '620.68',
+                                  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                                SizedBox(height: 4),
+                                Text(
+                                  'Kcal',
+                                  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 15,
+                                    color: txt,
+                                  ),
+                                ),
+                              ],
+                            ),
+                         ],
+    ),
+  ),
+),
+
                     ],
                   ),
                   SizedBox(width: 40),
@@ -712,7 +750,7 @@ class _ScrollPageState extends State<ScrollPage> {
                             SvgPicture.asset('Assets/Icons/heartt.svg'),
                           ],
                         ),
-                        SizedBox(height: 20),
+                        
                         SvgPicture.asset('Assets/Icons/shin.svg'),
                         Text(
                           '74',
@@ -759,11 +797,19 @@ class _ScrollPageState extends State<ScrollPage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Invite your friends', style: TextStyle()),
+                        Text('Invite your friends',  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w500,
+                                  ),),
                         SizedBox(height: 10),
                         Text(
                           'Invite your friends to get a \n free exercise right away',
-                          style: TextStyle(),
+ style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 14,
+                                    
+                                  ),
                         ),
                       ],
                     ),
@@ -784,7 +830,16 @@ class _ScrollPageState extends State<ScrollPage> {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 children: [
-                  Text('Home', style: TextStyle(color: Colors.black)),
+                  Column(
+                    children: [
+                          Text('Home',  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                     
+                                  ),),
+                                  SvgPicture.asset('Assets/Icons/Dot.svg'),
+                    ],
+                  ),
+                  
                   SizedBox(width: 23),
                   IconButton(
                     onPressed: () {

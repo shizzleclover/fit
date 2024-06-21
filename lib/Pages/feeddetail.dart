@@ -110,17 +110,33 @@ class _MyFeedDetailsState extends State<MyFeedDetails> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text('Linh Nguyen'),
+                                  Text('Linh Nguyen', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                                   SizedBox(height: 5),
-                                  Text('2s ago'),
+                                  Text('2s ago',style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                                 ],
                               ),
                             ],
                           ),
                           SizedBox(height: 20),
-                          Text('I am very happy to be with Cafit in'),
-                          SizedBox(height: 5),
-                          Text('training sessions and how about you?'),
+                          Text('I am very happy to be with Cafit in', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
+                           
+                          Text('training sessions and how about you?', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                           SizedBox(height: 20),
                           Image.asset('Assets/Images/exe.png'),
                           SizedBox(height: 20),
@@ -149,7 +165,11 @@ class _MyFeedDetailsState extends State<MyFeedDetails> {
                 Row(
                   children: [
                     SizedBox(width: 30),
-                    Text('Comments', style: TextStyle()),
+                    Text('Comments', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                     SizedBox(width: 239),
  
                        SvgPicture.asset('Assets/Icons/circ.svg'),
@@ -165,8 +185,12 @@ class _MyFeedDetailsState extends State<MyFeedDetails> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('You'),
-                        SizedBox(height: 10),
+                        Text('You', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
+                        SizedBox(height: 4),
                         Text('2s ago'),
                       ],
                     ),
@@ -178,33 +202,53 @@ class _MyFeedDetailsState extends State<MyFeedDetails> {
                   ],
                 ),
                 SizedBox(height: 20),
-                Text('Thanks CaFit is a good support tool and'),
-                Text('I love it 💪'),
+                Text('Thanks CaFit is a good support tool and', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
+                Text('I love it 💪', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                 SizedBox(height: 40),
                 Row(
                   children: [
                     
-                      Image.asset('Assets/Images/roun.png'),
+                    Image.asset('Assets/Images/roun.png'),
                     
                     SizedBox(width: 30),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Jeremy Thompson'),
-                        SizedBox(height: 10),
+                        Text('Jeremy Thompson', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
+                        SizedBox(height: 4),
                         Text('2s ago'),
                       ],
                     ),
-                    SizedBox(width: 120),
+                    SizedBox(width: 130),
                     SizedBox(
-                      
+ 
                       child: SvgPicture.asset('Assets/Icons/love.svg'),
                     ),
                   ],
                 ),
                 SizedBox(height: 20),
-                Text('Thanks CaFit is a good support tool and'),
-                Text('I love it 💪'),
+                Text('Thanks CaFit is a good support tool and', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
+                Text('I love it 💪', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                 SizedBox(height: 40),
               ],
             ),

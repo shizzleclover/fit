@@ -96,9 +96,15 @@ class _FeedPageState extends State<FeedPage> {
               SizedBox(height: 20),
               Row(
                 children: [
-                 Image.asset('Assets/Images/roun.png'),
-                  SizedBox(width: 30),
-                   Image.asset('Assets/Images/roun2.png'),
+                 Container(
+                    height: 64,
+                    width: 64,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: conta),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child: Image.asset('Assets/Images/roun2.png'),
+                  ),
                   SizedBox(width: 30),
                   Container(
                     height: 64,
@@ -107,10 +113,28 @@ class _FeedPageState extends State<FeedPage> {
                       border: Border.all(color: conta),
                       borderRadius: BorderRadius.circular(100),
                     ),
-                    child: SvgPicture.asset('Assets/Images/'),
+                    child: Image.asset('Assets/Images/roun.png'),
                   ),
                   SizedBox(width: 30),
-                    Image.asset('Assets/Images/roun2.png'),
+                  Container(
+                    height: 64,
+                    width: 64,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: conta),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child: Image.asset('Assets/Images/roun2.png'),
+                  ),
+                  SizedBox(width: 30),
+                  Container(
+                    height: 64,
+                    width: 64,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: conta),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child: Image.asset('Assets/Images/roun.png'),
+                  ),
                 ],
               ),
               SizedBox(height: 30),
@@ -142,17 +166,33 @@ class _FeedPageState extends State<FeedPage> {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Linh Nguyen'),
+                                Text('Linh Nguyen', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                                 SizedBox(height: 5),
-                                Text('2s ago'),
+                                Text('2s ago', style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                               ],
                             ),
                           ],
                         ),
                         SizedBox(height: 20),
-                        Text('I am very happy to be with Cafit in'),
+                        Text('I am very happy to be with Cafit in',  style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                         SizedBox(height: 5),
-                        Text('training sessions and how about you?'),
+                        Text('training sessions and how about you?',style: TextStyle(
+                                    fontFamily: 'CircularStd',
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w200,
+                                  ),),
                         SizedBox(height: 20),
                         Image.asset('Assets/Images/exe.png'),
                         SizedBox(height: 20),
