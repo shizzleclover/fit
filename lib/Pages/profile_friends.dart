@@ -1,5 +1,7 @@
 import 'workout.dart';
 import 'package:flutter/material.dart';
+import 'package:fitapp/Widgets2/appbar.dart';
+import 'package:fitapp/Pages/friendspage.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: ProfileFriends(),
       theme: ThemeData(
-        fontFamily: 'CircularStd', 
+        fontFamily: 'CircularStd',
       ),
     );
   }
@@ -22,29 +24,11 @@ class ProfileFriends extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color(0xffFF6079),
-        leading: IconButton(
-          icon: Image.asset('assets2/back_pink.png'),
-          onPressed: () {
-          },
-        ),
-        title: const Text(
-          "Settings",
-          style: TextStyle(color: Colors.white,),
-        ),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            icon: Image.asset('assets2/more_pink.png'),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => AccountScreen()),
-              );
-            },
-          ),
-        ],
+      appBar: CustomAppBar(
+        leftIconPath: "assets3/Images/Arrow.svg",
+        rightIconPath: "assets3/Images/Filter.svg",
+        onLeftIconTap: () => Navigator.pop(context),
+        backGround: const Color(0xffFF6079),
       ),
       backgroundColor: const Color(0xffFF6079),
       body: SingleChildScrollView(
@@ -81,7 +65,19 @@ class ProfileFriends extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
-              child: const Text('Follow', style:TextStyle( color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold)),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Friendspage()));
+                },
+                child: const Text('Follow',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold)),
+              ),
             ),
             const SizedBox(height: 70),
             Container(
@@ -102,7 +98,8 @@ class ProfileFriends extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Container(
-                          padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 5, horizontal: 20),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
                             color: const Color(0xFFFFFFFF),
