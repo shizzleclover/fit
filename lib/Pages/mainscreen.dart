@@ -42,7 +42,7 @@ class MainScreen extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                SizedBox(height: 100),  
+                SizedBox(height: 50),  
                 Text(
                   'Pump House',
                   style: TextStyle(
@@ -62,7 +62,7 @@ class MainScreen extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 10),
                GestureDetector(
   onTap: () {
     Navigator.push(
